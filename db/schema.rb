@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160602183553) do
+ActiveRecord::Schema.define(version: 20160602184625) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,7 +31,10 @@ ActiveRecord::Schema.define(version: 20160602183553) do
     t.string   "weight"
     t.string   "website_url"
     t.string   "video_url"
+    t.integer  "sport_id"
   end
+
+  add_index "athletes", ["sport_id"], name: "index_athletes_on_sport_id", using: :btree
 
   create_table "sports", force: :cascade do |t|
     t.datetime "created_at", null: false
