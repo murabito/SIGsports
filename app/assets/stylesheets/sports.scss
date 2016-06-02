@@ -1,3 +1,123 @@
 // Place all the styles related to the sports controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.grid {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  zoom: 1;
+  box-sizing: border-box;
+}
+
+.grid:before,.grid:after {
+  content: ' ';
+  display: table;
+  box-sizing: border-box;
+}
+
+.grid:after {
+  clear: both;
+}
+
+.grid-item {
+  overflow: hidden;
+  position: relative;
+  float: left;
+  height: 50%;
+  min-width: 20%;
+  box-sizing: border-box;
+}
+
+.grid-item-image {
+  min-width: 400px;
+  max-width: 100%;
+  min-height: 100%;
+  transition: all .3s ease-in-out;
+  vertical-align: middle;
+}
+
+.grid-item-view {
+  display: block;
+  padding: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(69, 73, 77, .9);
+  opacity: 0;
+  transition: all .4s ease-in-out;
+  box-sizing: border-box;
+} 
+
+.grid-item:hover > .grid-item-view {
+  opacity: 1;
+} 
+
+.grid-item-view-title {
+  margin-top: 0;
+  padding: 0 0 10px 0;
+  color: #fff;
+  font-family: "avenir-black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 2.25em;
+}
+
+.grid-item-view-list {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+.grid-item-view-list li {
+  padding: 5px 0;
+}
+
+.grid-item-view-button {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 10px auto;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  background: none;
+  transition: all .3s ease-in-out;
+}
+
+.grid-item-view-button:hover, .grid-item-view-button:focus {
+  text-decoration: none;
+  color: #45494d;
+  background: #fff;
+}
+
+@media (max-width: 1835px) {
+  .grid-item { 
+    width: 25%;
+  }
+}
+
+@media (max-width: 1535px) {
+  .grid-item { 
+    width: 33.33333333%;
+  }
+}
+
+@media (max-width: 1135px) {
+  .grid-item { 
+    width: 50%;
+  }
+}
+
+@media (max-width: 1250px) {
+  main #team li {
+  }
+}
+
+@media (max-width: 935px) {
+  main li { 
+  }
+}
