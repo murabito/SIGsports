@@ -1,0 +1,34 @@
+@import url("whitespace-reset.scss");
+
+body {
+  font: normal 14px "avenir-medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.red {
+  color: #c40013;
+}
+
+.black {
+  color: #0d0d0b;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-family: "avenir-black";
+}
+
+.font-size-15 {
+  font-size: 1.5em;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

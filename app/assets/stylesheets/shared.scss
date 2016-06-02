@@ -1,0 +1,64 @@
+#sidebar {
+  float: left;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px 50px 30px 50px;
+  background: #d0cfd1;
+  width: 300px;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+#sidebar header h1 a {
+  overflow: hidden;
+  display: block;
+  width: 200px;
+  height: 130px;
+  margin: 0 auto;
+  background: transparent url("images/logo.png") 0 0 no-repeat;
+  background-size: cover;
+  text-indent: -9999px;
+}
+
+nav {
+  padding: 100px 0;
+  font-size: 1.5em;
+  letter-spacing: 1.5px;
+  font-family: "avenir-black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav li {
+  padding: 0 0 25px 0;
+}
+
+nav li a {
+  color: #45494d;
+}
+
+#sidebar footer {
+  text-align: center;
+  display: block;
+  position: absolute;
+  bottom: 10px;
+}
+
+#sidebar footer li {
+  display: inline-block;
+  padding: 5px 0 0 0;
+}
+
+.other-sports {
+  display: block;
+  padding: 5px 0 0 0;
+}
+
+#sidebar footer p {
+  padding: 5px 0 0 0;
+}
+
+#sidebar:after {
+  content: ' ';
+  clear: both;
+}
