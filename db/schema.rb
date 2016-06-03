@@ -70,6 +70,8 @@ ActiveRecord::Schema.define(version: 20160603202311) do
   add_index "sports", ["type_id"], name: "index_sports_on_type_id", using: :btree
 
   create_table "team_members", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "last_name"
     t.string   "position"
     t.string   "photo_url"
     t.string   "email"
