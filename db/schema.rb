@@ -37,9 +37,11 @@ ActiveRecord::Schema.define(version: 20160603143557) do
   add_index "athletes", ["sport_id"], name: "index_athletes_on_sport_id", using: :btree
 
   create_table "sports", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "name"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.integer  "type",       default: 0
   end
+
+  add_index "sports", ["type"], name: "index_sports_on_type", using: :btree
 
 end
