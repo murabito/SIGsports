@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :team_members
   resources :news_articles
   resources :featured_photos
   # resources :sports
