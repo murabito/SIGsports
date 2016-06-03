@@ -14,5 +14,6 @@
  *= require ./shared
  *= require_tree .
  *= require ./vendor/whitespace-reset
+ *= require font-awesome
  *= require_self
  */
