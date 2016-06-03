@@ -1,0 +1,2 @@
+class FeaturedPhotosController < ApplicationController
+end

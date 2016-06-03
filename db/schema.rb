@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160603143557) do
+ActiveRecord::Schema.define(version: 20160603164347) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,12 +36,24 @@ ActiveRecord::Schema.define(version: 20160603143557) do
 
   add_index "athletes", ["sport_id"], name: "index_athletes_on_sport_id", using: :btree
 
-  create_table "sports", force: :cascade do |t|
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-    t.integer  "type",       default: 0
+  create_table "featured_photos", force: :cascade do |t|
+    t.integer  "athlete_id"
+    t.integer  "sport_id"
+    t.string   "image_url",                     null: false
+    t.boolean  "display_status", default: true
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
   end
 
-  add_index "sports", ["type"], name: "index_sports_on_type", using: :btree
+  add_index "featured_photos", ["athlete_id"], name: "index_featured_photos_on_athlete_id", using: :btree
+  add_index "featured_photos", ["sport_id"], name: "index_featured_photos_on_sport_id", using: :btree
+
+  create_table "sports", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "type_id"
+  end
+
+  add_index "sports", ["type_id"], name: "index_sports_on_type_id", using: :btree
 
 end
