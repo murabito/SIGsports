@@ -9,7 +9,7 @@
       </li>
       <li>
         <span>Team:</span>
-        <span><%= athlete.american_team_url %></span>
+        <span><%= link_to athlete.american_team_name, athlete.american_team_url %></span>
       </li>
       <li>
         <span>Born:</span>
@@ -24,7 +24,7 @@
         <span><%= athlete.weight %></span>
       </li>
       <li>
-        <span>VISIT WEBSITE</span>
+        <span><%= link_to 'Visit website', athlete.website_url %></span>
       </li>
       <li>
         <span>College:</span>
