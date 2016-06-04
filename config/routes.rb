@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   get 'football', to: 'sports#football'
 
   get '/about', to: 'pages#about'
+  get '/professional-management', to: 'pages#professional_management'
+  get '/career-development', to: 'pages#career_development'
+  get '/personal-management', to: 'pages#personal_management'
+  get '/marketing-philanthropy', to: 'pages#marketing_philanthropy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
