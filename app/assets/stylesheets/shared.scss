@@ -43,12 +43,34 @@ nav li a {
   text-align: center;
   display: block;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+}
+
+#sidebar footer ul {
+  margin: 0 auto;
 }
 
 #sidebar footer li {
   display: inline-block;
-  padding: 5px 0 0 0;
+  padding: 10px 5px;
+}
+
+#sidebar footer li a {
+  display: block;
+  color: #6d6f72;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #45494d;
+}
+
+#sidebar footer li i {
+  display: block;
+  padding: 10px;
+  color: #d0cfd1;
 }
 
 .other-sports {
@@ -57,7 +79,11 @@ nav li a {
 }
 
 #sidebar footer p {
-  padding: 5px 0 0 0;
+  text-align: center;
+  padding: 10px 0 0 0;
+  display: block;
+  margin: 0 auto;
+  color: #45494d;
 }
 
 #sidebar:after {
