@@ -9,8 +9,9 @@
   font-size: 24px;
   text-align: justify;
   box-sizing: border-box;
-  font-family: "avenir-book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 1.5px;
+  font-family: "avenir-medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 1.25px;
+  background: #25282e;
 }
 
 #about h1 {
@@ -19,6 +20,7 @@
   font-size: 40px;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 2px;
 }
 
 #about p {
@@ -26,6 +28,12 @@
   padding: 20px 0;
   vertical-align: middle;
   line-height: 1.5;
+  color: #d0cfd1;
+}
+
+#about .slogan {
+  color: #c40013;
+  letter-spacing: 2px;
 }
 
 .slogan {
@@ -33,7 +41,13 @@
   font-size: 36px;
   color: #c40013;
   text-transform: uppercase;
+}
+
+.what-we-do {
+  height: 100vh;
+  background: #25282e;
   
+
 }
 
 
