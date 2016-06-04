@@ -4,7 +4,10 @@ body {
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
+}
+
+a:hover {
+  color: #c40013;
 }
 
 .red {
@@ -13,6 +16,14 @@ a {
 
 .black {
   color: #0d0d0b;
+}
+
+.white {
+  color: #fff;
+}
+
+.light-grey {
+  color: #d0cfd1;
 }
 
 .medium {
