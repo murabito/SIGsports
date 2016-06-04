@@ -1,3 +1,5 @@
 <main class="grid">
-  <%= render partial: 'athlete', collection: @football_athletes %>
+  <% 9.times do |_| %>
+    <%= render partial: 'athlete', collection: @football_athletes %>
+  <% end %>
 </main>
