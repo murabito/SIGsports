@@ -67,6 +67,15 @@ nav li a {
   background: #45494d;
 }
 
+#sidebar footer li a:hover {
+  background: #d0cfd1;
+  border: solid 2px #45494d;
+  box-sizing: border-box;
+  > i {
+    color: #45494d;
+  }
+}
+
 #sidebar footer li i {
   display: block;
   padding: 10px;
