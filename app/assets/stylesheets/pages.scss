@@ -1,3 +1,40 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#about {
+  height: 100vh;
+  padding: 17.5%;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: justify;
+  box-sizing: border-box;
+  font-family: "avenir-book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 1.5px;
+}
+
+#about h1 {
+  padding: 0 0 10px 0;
+  font-family: "avenir-black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#about p {
+  margin: 0 auto;
+  padding: 20px 0;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
+.slogan {
+  font-family: "avenir-heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  color: #c40013;
+  text-transform: uppercase;
+  
+}
+
+
+
