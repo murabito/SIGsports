@@ -1,7 +1,9 @@
 <div class="grid-item">
   <%= image_tag athlete.photo_url, alt: 'Tavon Wilson', class: 'grid-item-image' %>
   <div class="grid-item-view">
-    <h2 class="grid-item-view-title">Tavon Wilson</h2>
+    <h2 class="grid-item-view-title">
+      <%= "#{athlete.first_name} #{athlete.last_name}" %>
+    </h2>
     <ul class="grid-item-view-list">
       <li>
         <span>Position:</span>
@@ -31,7 +33,7 @@
         <span><%= athlete.college %></span>
       </li>
       <li>
-        <a href="#" class="grid-item-view-button">FULL BIOGRAPHY</a>
+        <a href="<%= athlete_path(athlete.id) %>" class="grid-item-view-button">FULL BIOGRAPHY</a>
       </li>
     </ul>
   </div>
