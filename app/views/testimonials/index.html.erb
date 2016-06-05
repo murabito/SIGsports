@@ -1,7 +1,3 @@
-<main>
-  <% @testimonials.each do |testimonial| %>
-    <%= testimonial.name %>
-    <%= testimonial.title %>
-    <%= testimonial.quote %>
-  <% end %>
+<main id="testimonials" class="grid">
+  <%= render partial: 'testimonial', collection: @testimonials %>
 </main>
