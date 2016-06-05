@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   # resources :sports
   resources :athletes
 
+  get 'womens-basketball', to: 'sports#womens_basketball'
+  get 'mens-basketball', to: 'sports#mens_basketball'
   get 'football', to: 'sports#football'
 
   get '/about', to: 'pages#about'
