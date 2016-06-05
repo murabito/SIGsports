@@ -1,17 +1,17 @@
 class SportsController < ApplicationController
   
-  def mens_basketball
-    @athletes = Athlete.where(sport: 0)
-    @sport = 0
+  def womens_basketball
+    @sport = Sport.find_by_type_id(0)
+    @athletes = @sport.athletes
   end
   
-  def womens_basketball
-    @athletes = Athlete.where(sport: 1)
-    @sport = 1
+  def mens_basketball
+    @sport = Sport.find_by_type_id(1)
+    @athletes = @sport.athletes
   end
 
   def football
-    @athletes = Athlete.where(sport: 2)
-    @sport = 2
+    @sport = Sport.find_by_type_id(2)
+    @athletes = @sport.athletes
   end
 end
