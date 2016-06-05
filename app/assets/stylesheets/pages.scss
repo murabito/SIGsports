@@ -3,9 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #about {
-  height: 100vh;
+  min-height: 100vh;
   padding: 17.5%;
-  color: #ffffff;
   font-size: 24px;
   text-align: justify;
   box-sizing: border-box;
@@ -21,6 +20,7 @@
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 2px;
+  color: #ffffff;
 }
 
 #about p {
@@ -44,11 +44,38 @@
 }
 
 .what-we-do {
-  height: 100vh;
+  min-height: 100vh;
   background: #25282e;
-  
-
+  padding: 5% 10%;
+  font-size: 20px;
+  text-align: justify;
+  box-sizing: border-box;
+  font-family: "avenir-medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 1.25px;
 }
+
+.what-we-do h1 {
+  padding: 0 0 10px 0;
+  font-family: "avenir-black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.what-we-do h2 {
+  font-size: 28px;
+  color: #c40013;
+}
+
+.what-we-do p {
+  padding: 10px 0;
+  letter-spacing: 1px;
+}
+
+
+
 
 
 
