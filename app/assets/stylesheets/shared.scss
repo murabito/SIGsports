@@ -33,11 +33,11 @@ nav {
 }
 
 nav li {
-  padding: 0 0 25px 0;
+  padding: 0 0 20px 0;
 }
 
 nav li a {
-  color: #45494d;
+  color: rgb(109, 111, 114);
 }
 
 #sidebar footer {
@@ -62,24 +62,24 @@ nav li a {
 #sidebar footer li a {
   display: block;
   color: #6d6f72;
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 46px;
   border-radius: 100%;
-  background: #45494d;
+  background: rgb(109, 111, 114);
 }
 
 #sidebar footer li a:hover {
   background: #d0cfd1;
-  border: solid 2px #45494d;
+  border: solid 2px rgb(109, 111, 114);
   box-sizing: border-box;
   > i {
-    color: #45494d;
+    color: rgb(109,111,114);
   }
 }
 
 #sidebar footer li i {
   display: block;
-  padding: 11px 10px;
+  padding: 9px 8px;
   color: #d0cfd1;
 }
 
@@ -93,7 +93,7 @@ nav li a {
   padding: 10px 0 0 0;
   display: block;
   margin: 0 auto;
-  color: #45494d;
+  color: rgb(109,111,114);
 }
 
 #sidebar:after {
