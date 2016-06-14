@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :testimonials
-  resources :team_members
+  resources :team_members, except: 'index'
   resources :news_articles
   resources :featured_photos
   # resources :sports
@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   get '/career-development', to: 'pages#career_development'
   get '/personal-management', to: 'pages#personal_management'
   get '/marketing-philanthropy', to: 'pages#marketing_philanthropy'
+
+  get 'team', to: 'team_members#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
