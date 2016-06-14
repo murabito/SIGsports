@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #athlete {
-  padding: 20px;
+  padding: 30px;
 }
 
 .athlete-info-container {
@@ -12,8 +12,8 @@
   width: 33%;
   padding: 20px;
   margin: 0 20px 0 0;
-  border: solid 2px #787b80;
-  box-shadow: 0 3px 3px 0 rgba(120, 123, 128, .2);
+  border: solid 1px #f6f7f8;
+  box-shadow: 0 0 3px 0 rgba(246, 247, 248, .3);
   border-radius: 3px;
   box-sizing: border-box;
 }
@@ -26,12 +26,15 @@
 .athlete-description-box {
   overflow: hidden;
   padding: 20px;
+  font-size: 1.25em;
+  border: solid 1px #f6f7f8;
+  box-shadow: 0 0 3px 0 rgba(246, 247, 248, .3);
   border-radius: 3px;
   box-sizing: border-box;
 }
 
 #athlete h1 {
-  padding: 20px;
+  padding: 30px;
   text-align: center;
   font-family: "avenir-black", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
