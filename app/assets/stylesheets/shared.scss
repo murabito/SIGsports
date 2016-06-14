@@ -5,7 +5,7 @@
   bottom: 0;
   left: 0;
   padding: 20px 50px 30px 50px;
-  background: #d0cfd1;
+  background: #f6f7f8;
   width: 300px;
   min-height: 100%;
   box-sizing: border-box;
@@ -37,7 +37,7 @@ nav li {
 }
 
 nav li a {
-  color: rgb(109, 111, 114);
+  color: #787b80;
 }
 
 #sidebar footer {
@@ -61,26 +61,26 @@ nav li a {
 
 #sidebar footer li a {
   display: block;
-  color: #6d6f72;
+  color: #f6f7f8;
   width: 46px;
   height: 46px;
   border-radius: 100%;
-  background: rgb(109, 111, 114);
+  background: #787b80;
 }
 
 #sidebar footer li a:hover {
-  background: #d0cfd1;
-  border: solid 2px rgb(109, 111, 114);
+  background: #f6f7f8;
+  border: solid 2px #787b80;
   box-sizing: border-box;
   > i {
-    color: rgb(109,111,114);
+    color: #787b80;
   }
 }
 
 #sidebar footer li i {
   display: block;
   padding: 9px 8px;
-  color: #d0cfd1;
+  color: #f6f7f8;
 }
 
 .other-sports {
@@ -93,7 +93,7 @@ nav li a {
   padding: 10px 0 0 0;
   display: block;
   margin: 0 auto;
-  color: rgb(109,111,114);
+  color: #787b80;
 }
 
 #sidebar:after {

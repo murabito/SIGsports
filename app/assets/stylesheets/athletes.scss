@@ -1,3 +1,68 @@
 // Place all the styles related to the athletes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#athlete {
+  padding: 20px;
+}
+
+.athlete-info-container {
+  float: left;
+  min-width: 350px;
+  width: 33%;
+  padding: 20px;
+  margin: 0 20px 0 0;
+  border: solid 2px #787b80;
+  box-shadow: 0 3px 3px 0 rgba(120, 123, 128, .2);
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.athlete-info-container img {
+  min-width: 300px;
+  max-width: 100%;
+}
+
+.athlete-description-box {
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+#athlete h1 {
+  padding: 20px;
+  text-align: center;
+  font-family: "avenir-black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+#athlete figure {
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+#athlete img {
+  width: 100%;
+  height: auto;
+}
+
+.athlete-info {
+  padding: 10px 0 0 0;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.athlete-info li {
+  padding: 5px 0;
+}
+
+
+
+

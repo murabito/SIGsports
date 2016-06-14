@@ -1,0 +1,43 @@
+<main id="athlete">
+  <h1>
+    <%= "#{@athlete.first_name} #{@athlete.last_name}" %>
+  </h1>
+
+  <section class="athlete-info-container">
+    <figure>
+      <%= image_tag @athlete.photo_url, alt: 'Tavon Wilson', class: 'grid-item-image' %>
+    </figure>
+    <ul class="athlete-info">
+      <li>
+        <span>Position:</span>
+        <span><%= @athlete.position %></span>
+      </li>
+      <li>
+        <span>Team:</span>
+        <span><%= link_to @athlete.american_team_name, @athlete.american_team_url, class: 'white' %></span>
+      </li>
+      <li>
+        <span>Born:</span>
+        <span><%= @athlete.birthdate.strftime("%m/%d/%Y") %></span>
+      </li>
+      <li>
+        <span>Height:</span>
+        <span><%= @athlete.height %></span>
+      </li>
+      <li>
+        <span>Weight:</span>
+        <span><%= @athlete.weight %></span>
+      </li>
+      <li>
+        <span><%= link_to 'Website', @athlete.website_url, class: 'white' %></span>
+      </li>
+      <li>
+        <span>College:</span>
+        <span><%= @athlete.college %></span>
+      </li>
+    </ul>
+  </section>
+  <section class="athlete-description-box">
+  Professional Career
+  </section>
+</main>
