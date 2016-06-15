@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admin_users
   root to: 'pages#index'
   resources :testimonials
   resources :team_members, except: 'index'
