@@ -1,5 +1,7 @@
 body {
   font: normal 14px "avenir-medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #1a1e24;
+  color: #b3b8c3;
 }
 
 a {
@@ -11,7 +13,7 @@ a:hover {
 }
 
 .red {
-  color: #c40013;
+  color: #c1272d;
 }
 
 .black {
@@ -44,8 +46,6 @@ a:hover {
 
 main {
   overflow: hidden;
-  background: #45494d;
-  color: #f6f7f8;
   margin: 0 0 0 300px;
   min-height: 100vh;
 }
