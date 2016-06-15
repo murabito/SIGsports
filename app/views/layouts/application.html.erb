@@ -8,10 +8,14 @@
 </head>
 <body>
 
-<header>
-  <%= render 'shared/sidebar' %>
-</header>
-<%= yield %>
+  <header>
+    <%= render 'shared/sidebar' %>
+  </header>
+  
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+  <%= yield %>
 
 </body>
 </html>
