@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'pages#index'
   resources :testimonials
   resources :team_members, except: 'index'
   resources :news_articles
