@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    resources :admin_users
+    resources :athletes
+    resources :featured_photos
+    resources :news_articles
+    resources :sports
+    resources :team_members
+    resources :testimonials
+
+    root to: "admin_users#index"
+  end
+
   devise_for :admin_users
   root to: 'pages#index'
   resources :testimonials
