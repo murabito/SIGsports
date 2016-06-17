@@ -89,6 +89,12 @@ Had seven double-doubles and two 20-plus point performances (2009-2010)
 Finished at No. 5 in Maryland freshman record books in rebound average (7.5), total rebounds (256) and No. 4 in blocked shots (33) (2009-2010)
 Averaged 7.5rpg and .568 FGP(2009-2010)
   </section>
+
+  <% if @athlete.video_url %>
+    <section id="video-section">
+      <%= embed_youtube(@athlete.video_url) %>
+    </section>
+  <% end %>
 </main>
 
 
