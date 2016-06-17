@@ -1,3 +1,90 @@
 // Place all the styles related to the TeamMembers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#team  {
+  display: block;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+#team ul {
+  display: block;
+  width: 100%;
+  position: relative;
+  top: 25%;
+  padding: 0 0 0 1%;
+}
+
+#team li {
+  float: left;
+  overflow: hidden;
+  width: 23.75%;
+  padding: 0 1% 0 0;
+}
+
+#team li:nth-of-type(4n) {
+  padding-right: 0%;
+}
+
+#team img {
+  min-width: 100px;
+  max-width: 100%;
+}
+
+#team a {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  font-family: "avenir-heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#team a:hover > figure {
+  border: solid 3px #c1272d;
+  border-radius: 3px;
+}
+
+#team h2 {
+  padding: 20px 5px 5px 5px;
+  font-size: 1.5em;
+}
+
+#team h3 {
+  padding: 5px;
+  font-size: 1.25em;
+}
+
+#team ul .social-media-icons {
+  display: block;
+  min-width: 120px;
+  width: 50%;
+  max-width: 120px;
+  position: relative;
+  left: 50%;
+  padding: 5px 0 0 0;
+  margin-left: -25px;
+}
+
+#team .social-media-icons li {
+  display: block;
+  width: 50px;
+}
+
+#team .social-media-icons li a {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background: #b3b8c3;
+}
+
+#team .social-media-icons li i {
+  padding: 5px;
+  font-size: 20px;
+  color: #1a1e24;
+}
+
+
+
+
+
