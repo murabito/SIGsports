@@ -6,10 +6,12 @@
       </a>
     </h1>
   </header>
+
+  <% if @sport.womens_basketball? %>
   <nav>
     <ul>
-      <li><a href="about.html">Who We Are</a></li>
-      <li><a href="team.html">What We Do</a></li>
+      <li><a href="<%= football_about_path %>">Who We Are</a></li>
+      <li><a href="#">What We Do</a></li>
       <li><a href="#">Clients</a></li>
       <li><a href="#">Contact Us</a></li>
     </ul>
@@ -30,4 +32,5 @@
 
     <p>&copy; SIG Sports</p>
   </footer>
+  <% end %>
 </div>

@@ -1,3 +1,9 @@
+<header>
+  <% if @sport.football? %>
+    <%= render 'shared/sidebar' %>
+  <% end %>
+</header>
+
 <main class="grid">
   <% 9.times do |_| %>
     <%= render partial: 'athlete', collection: @athletes %>
