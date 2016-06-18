@@ -3,18 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #athlete {
-  padding: 30px;
+  padding: 20px;
+}
+
+#athlete .box {
+  padding: 20px;
 }
 
 .athlete-info-container {
   float: left;
-  min-width: 350px;
-  width: 33%;
-  padding: 20px;
-  margin: 0 20px 0 0;
-  border: solid 1px #f6f7f8;
-  box-shadow: 0 0 3px 0 rgba(246, 247, 248, .3);
-  border-radius: 3px;
+  width: 350px;
+  margin: 0 40px 20px 0;
   box-sizing: border-box;
 }
 
@@ -25,16 +24,12 @@
 
 .athlete-description-box {
   overflow: hidden;
-  padding: 20px;
   font-size: 1.25em;
-  border: solid 1px #f6f7f8;
-  box-shadow: 0 0 3px 0 rgba(246, 247, 248, .3);
-  border-radius: 3px;
   box-sizing: border-box;
 }
 
 #athlete h1 {
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   font-family: "avenir-black", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -57,7 +52,7 @@
 }
 
 .athlete-info {
-  padding: 10px 0 0 0;
+  padding: 20px 0 0 0;
   font-size: 1.5em;
   color: #fff;
 }
@@ -65,6 +60,37 @@
 .athlete-info li {
   padding: 5px 0;
 }
+
+#video-section {
+  clear: both;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+}
+
+#video-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#video-section iframe {
+  display: block;
+  min-width: 840px;
+  min-height: 472.5px;
+  padding: 40px;
+  margin: 0 auto;
+  border: none;
+}
+
+
+
+
+
+
+
+
 
 
 
