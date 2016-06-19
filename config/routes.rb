@@ -37,7 +37,7 @@ Rails.application.routes.draw do
   get '/womens-basketball/personal-management', to: 'pages/womens_basketball#personal_management'
   get '/womens-basketball/marketing-philanthropy', to: 'pages/womens_basketball#marketing_philanthropy'
 
-  get '/mens-basketball/contact', to: 'pages/mens_basketball#contact'
+  get '/womens-basketball/contact', to: 'pages/womens_basketball#contact'
 
 
   ## Mens Basketball Pages ##
