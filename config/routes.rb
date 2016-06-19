@@ -33,9 +33,9 @@ Rails.application.routes.draw do
   get '/womens-basketball/testimonials', to: 'pages/womens_basketball#testimonials'
 
   get '/womens-basketball/professional-management', to: 'pages/womens_basketball#professional_management'
-  get '/womens-basketball/career-development', to: 'pages/womens_basketball#career_development'
+  get '/womens-basketball/career', to: 'pages/womens_basketball#career_development'
   get '/womens-basketball/personal-management', to: 'pages/womens_basketball#personal_management'
-  get '/womens-basketball/marketing-philanthropy', to: 'pages/womens_basketball#marketing_philanthropy'
+  get '/womens-basketball/marketing', to: 'pages/womens_basketball#marketing'
 
   get '/womens-basketball/contact', to: 'pages/womens_basketball#contact'
 
@@ -44,10 +44,10 @@ Rails.application.routes.draw do
   get '/mens-basketball/about', to: 'pages/mens_basketball#about'
   get '/mens-basketball/testimonials', to: 'pages/mens_basketball#testimonials'
 
-  get '/mens-basketball/professional-management', to: 'pages/mens_basketball#professional_management'
-  get '/mens-basketball/career-development', to: 'pages/mens_basketball#career_development'
-  get '/mens-basketball/personal-management', to: 'pages/mens_basketball#personal_management'
-  get '/mens-basketball/marketing-philanthropy', to: 'pages/mens_basketball#marketing_philanthropy'
+  get '/mens-basketball/draft', to: 'pages/mens_basketball#draft_preparation'
+  get '/mens-basketball/training', to: 'pages/mens_basketball#training'
+  get '/mens-basketball/marketing', to: 'pages/mens_basketball#marketing'
+  get '/mens-basketball/career', to: 'pages/mens_basketball#career_development'
 
   get '/mens-basketball/contact', to: 'pages/mens_basketball#contact'
 
@@ -57,9 +57,9 @@ Rails.application.routes.draw do
   get '/football/testimonials', to: 'pages/football#testimonials'
 
   get '/football/professional-management', to: 'pages/football#professional_management'
+  get '/football/marketing-management', to: 'pages/football#marketing_management'
   get '/football/career-development', to: 'pages/football#career_development'
-  get '/football/personal-management', to: 'pages/football#personal_management'
-  get '/football/marketing-philanthropy', to: 'pages/football#marketing_philanthropy'
+  get '/football/wealth-management', to: 'pages/football#wealth_management'
 
   get '/football/contact', to: 'pages/football#contact'
 
