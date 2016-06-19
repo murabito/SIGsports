@@ -11,7 +11,9 @@ Rails.application.routes.draw do
   end
 
   devise_for :admin_users
+
   root to: 'pages#index'
+
   resources :testimonials
   resources :team_members, except: 'index'
   resources :news_articles
@@ -19,40 +21,54 @@ Rails.application.routes.draw do
   # resources :sports
   resources :athletes
 
-  get 'womens-basketball', to: 'sports#womens_basketball'
-  get 'mens-basketball', to: 'sports#mens_basketball'
-  get 'football', to: 'sports#football'
+  get '/womens-basketball', to: 'sports#womens_basketball'
+  get '/mens-basketball', to: 'sports#mens_basketball'
+  get '/football', to: 'sports#football'
 
-  get 'team', to: 'team_members#index'
-
-  # Who We Are Routes Scoped by Sport
-  get 'womens-basketball/about', to: 'pages/womens_basketball#about'
-  get 'mens-basketball/about', to: 'pages/mens_basketball#about'
-  get 'football/about', to: 'pages/football#about'
-
-  get 'football/testimonials', to: 'pages/football#testimonials'
+  get '/team', to: 'team_members#index'
 
 
-  get '/professional-management', to: 'pages#professional_management'
-  get '/career-development', to: 'pages#career_development'
-  get '/personal-management', to: 'pages#personal_management'
-  get '/marketing-philanthropy', to: 'pages#marketing_philanthropy'
+  ## Womens Basketball Pages ##
+  get '/womens-basketball/about', to: 'pages/womens_basketball#about'
+  get '/womens-basketball/testimonials', to: 'pages/womens_basketball#testimonials'
+
+  get '/womens-basketball/professional-management', to: 'pages/womens_basketball#professional_management'
+  get '/womens-basketball/career-development', to: 'pages/womens_basketball#career_development'
+  get '/womens-basketball/personal-management', to: 'pages/womens_basketball#personal_management'
+  get '/womens-basketball/marketing-philanthropy', to: 'pages/womens_basketball#marketing_philanthropy'
+
+  get '/mens-basketball/contact', to: 'pages/mens_basketball#contact'
+
+
+  ## Mens Basketball Pages ##
+  get '/mens-basketball/about', to: 'pages/mens_basketball#about'
+  get '/mens-basketball/testimonials', to: 'pages/mens_basketball#testimonials'
+
+  get '/mens-basketball/professional-management', to: 'pages/mens_basketball#professional_management'
+  get '/mens-basketball/career-development', to: 'pages/mens_basketball#career_development'
+  get '/mens-basketball/personal-management', to: 'pages/mens_basketball#personal_management'
+  get '/mens-basketball/marketing-philanthropy', to: 'pages/mens_basketball#marketing_philanthropy'
+
+  get '/mens-basketball/contact', to: 'pages/mens_basketball#contact'
+
+
+  ## Football Pages ##
+  get '/football/about', to: 'pages/football#about'
+  get '/football/testimonials', to: 'pages/football#testimonials'
+
+  get '/football/professional-management', to: 'pages/football#professional_management'
+  get '/football/career-development', to: 'pages/football#career_development'
+  get '/football/personal-management', to: 'pages/football#personal_management'
+  get '/football/marketing-philanthropy', to: 'pages/football#marketing_philanthropy'
+
+  get '/football/contact', to: 'pages/football#contact'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
-
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
-
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
 
   # Example resource route with options:
   #   resources :products do
