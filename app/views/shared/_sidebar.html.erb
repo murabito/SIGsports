@@ -8,29 +8,10 @@
   </header>
 
   <% if @sport.womens_basketball? %>
-  <nav>
-    <ul>
-      <li><a href="<%= football_about_path %>">Who We Are</a></li>
-      <li><a href="#">What We Do</a></li>
-      <li><a href="#">Clients</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </nav>
-  <footer>
-    <ul class="social-media-icons">
-      <li>
-        <a href="#" class="twitter" target="_blank">
-          <%= fa_icon "twitter 2x" %>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="youtube" target="_blank">
-          <%= fa_icon "youtube 2x" %>
-        </a>
-      </li>
-    </ul>
-
-    <p>&copy; SIG Sports</p>
-  </footer>
+    <%= render 'shared/sidebar_womens_basketball' %>
+  <% elsif @sport.mens_basketball? %>
+    <%= render 'shared/sidebar_mens_basketball' %>
+  <% elsif @sport.football? %>
+    <%= render 'shared/sidebar_football' %>
   <% end %>
 </div>
