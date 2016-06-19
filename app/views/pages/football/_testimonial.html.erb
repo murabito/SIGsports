@@ -1,0 +1,10 @@
+<div class="grid-item">
+  <%= image_tag testimonial.photo_url %>
+  <div class="grid-item-view", alt: <%= testimonial.name %>, class: 'grid-item-image'>
+    <h2 class="grid-item-view-title"><%= testimonial.name %></h2>
+    <h3><%= testimonial.title %></h3>
+    <p class="testimonial-description">
+      <%= testimonial.quote %>
+    </p>
+  </div>
+</div>

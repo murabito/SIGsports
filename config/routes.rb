@@ -6,7 +6,6 @@ Rails.application.routes.draw do
     resources :news_articles
     resources :sports
     resources :team_members
-    resources :testimonials
 
     root to: "admin_users#index"
   end
@@ -24,14 +23,21 @@ Rails.application.routes.draw do
   get 'mens-basketball', to: 'sports#mens_basketball'
   get 'football', to: 'sports#football'
 
-  get '/about', to: 'pages#about'
+  get 'team', to: 'team_members#index'
+
+  # Who We Are Routes Scoped by Sport
+  get 'womens-basketball/about', to: 'pages/womens_basketball#about'
+  get 'mens-basketball/about', to: 'pages/mens_basketball#about'
   get 'football/about', to: 'pages/football#about'
+
+  get 'football/testimonials', to: 'pages/football#testimonials'
+
+
   get '/professional-management', to: 'pages#professional_management'
   get '/career-development', to: 'pages#career_development'
   get '/personal-management', to: 'pages#personal_management'
   get '/marketing-philanthropy', to: 'pages#marketing_philanthropy'
 
-  get 'team', to: 'team_members#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
