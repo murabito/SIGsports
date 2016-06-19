@@ -19,7 +19,9 @@
 #team li {
   float: left;
   overflow: hidden;
+  min-width: 150px;
   width: 23.75%;
+  max-width: 450px;
   padding: 0 1% 0 0;
 }
 
@@ -55,24 +57,27 @@
   font-size: 1.25em;
 }
 
-#team ul .social-media-icons {
+#team ul footer {
   display: block;
-  min-width: 120px;
-  width: 50%;
-  max-width: 120px;
+  width: 120px;
   position: relative;
   left: 50%;
+  margin-left: -60px;
+}
+
+#team ul .social-media-icons {
+  display: block;
   padding: 5px 0 0 0;
-  margin-left: -25px;
+  margin: 0 auto;
 }
 
 #team .social-media-icons li {
-  display: block;
+  display: inline-block;
   width: 50px;
 }
 
 #team .social-media-icons li a {
-  margin: 0 auto;
+  display: block;
   width: 30px;
   height: 30px;
   background: #b3b8c3;
