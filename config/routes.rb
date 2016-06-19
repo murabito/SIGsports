@@ -57,8 +57,8 @@ Rails.application.routes.draw do
   get '/football/testimonials', to: 'pages/football#testimonials'
 
   get '/football/professional-management', to: 'pages/football#professional_management'
-  get '/football/marketing-management', to: 'pages/football#marketing_management'
-  get '/football/career-development', to: 'pages/football#career_development'
+  get '/football/marketing', to: 'pages/football#marketing'
+  get '/football/career', to: 'pages/football#career_development'
   get '/football/wealth-management', to: 'pages/football#wealth_management'
 
   get '/football/contact', to: 'pages/football#contact'
