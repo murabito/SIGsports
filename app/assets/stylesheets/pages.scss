@@ -36,7 +36,7 @@
   color: #b4111e;
 }
 
-#about p, .what-we-do p, .what-we-do ul {
+#about p, .what-we-do p, .what-we-do ul, .what-we-do dl {
   margin: 0 auto;
   padding: 20px 0;
   line-height: 1.5;
@@ -45,6 +45,27 @@
 .what-we-do ul {
   list-style-type: disc;
 }
+
+.what-we-do dt {
+  padding: 0 0 5px 0;
+  color: #b4111e;  
+}
+
+.what-we-do dd {
+  padding: 0 0 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
