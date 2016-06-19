@@ -9,11 +9,11 @@ a {
 }
 
 a:hover {
-  color: #c40013;
+  color: #b4111e;
 }
 
 .red {
-  color: #c1272d;
+  color: #b4111e;
 }
 
 .black {
@@ -63,7 +63,14 @@ hr {
   box-sizing: border-box;
 }
 
-
+#slogan {
+  padding: 20px 0;
+  font-family: "avenir-heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  color: #b4111e;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
 
 
