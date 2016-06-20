@@ -36,6 +36,13 @@
   color: #b4111e;
 }
 
+.what-we-do h4 {
+  padding: 20px 0 0 0;
+  font-family: "avenir-medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
 #about p, .what-we-do p, .what-we-do ul, .what-we-do dl {
   font-family: "avenir-book", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 auto;
@@ -46,6 +53,7 @@
 .what-we-do ul {
   padding-left: 20px;
   list-style-type: circle;
+
 }
 
 .what-we-do li {
