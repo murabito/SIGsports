@@ -1,7 +1,19 @@
 <nav>
   <ul>
     <li><a href="<%= football_about_path %>">Who We Are</a></li>
-    <li><a href="#">What We Do</a></li>
+    
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        What We Do
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="<%= mens_basketball_draft_path %>">NBA Draft Preparation</a></li>
+        <li><a href="<%= mens_basketball_training_path %>">Professional Training</a></li>
+        <li><a href="<%= mens_basketball_marketing_path %>">Marketing &amp; Philanthropy</a></li>
+        <li><a href="<%= mens_basketball_career_path %>">Career Development</a></li>
+      </ul>
+    </li>
+
     <li><a href="#">Clients</a></li>
     <li><a href="#">Contact Us</a></li>
   </ul>
