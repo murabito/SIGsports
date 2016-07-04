@@ -33,11 +33,43 @@ nav {
 }
 
 nav li {
+  display: block;
   padding: 0 0 20px 0;
+  width: 100%;
+  background: transparent;
 }
 
-nav li a {
+.dropdown-menu li {
+  padding: 0 0 5px 0;
+}
+
+#sidebar a {
   color: #787b80;
+}
+
+#sidebar .dropdown-menu {
+  position: static;
+  float: none;
+  width: auto;
+  margin-top: 0;
+  letter-spacing: 1.5px;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+#sidebar .dropdown-menu {
+  padding: 20px 0 0 0;
+}
+
+#sidebar a {
+  text-decoration: none;
+}
+
+#sidebar a:hover,  {
+  color: #b4111e;
+  text-decoration: none;
 }
 
 #sidebar footer {

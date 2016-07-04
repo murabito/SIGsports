@@ -1,7 +1,23 @@
-<nav>
+<nav class="sidebar">
   <ul>
-    <li><a href="<%= football_about_path %>">Who We Are</a></li>
-    <li><a href="#">What We Do</a></li>
+    <li class="dropdown">
+      <a href="<%= football_about_path %>">
+        Who We Are
+      </a>
+    </li>
+    
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        What We Do
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="<%= football_professional_management_path %>">Professional Management</a></li>
+        <li><a href="<%= football_marketing_path %>">Marketing Management</a></li>
+        <li><a href="<%= football_career_path %>">Career Development</a></li>
+        <li><a href="<%= football_wealth_management_path %>">Wealth Management</a></li>
+      </ul>
+    </li>
+
     <li><a href="#">Clients</a></li>
     <li><a href="#">Contact Us</a></li>
   </ul>
