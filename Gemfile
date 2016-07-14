@@ -35,6 +35,9 @@ gem 'font-awesome-rails'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 
+# Configuration Management
+gem 'figaro'
+
 # Admin panel
 gem 'administrate'
 
