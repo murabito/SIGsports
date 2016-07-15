@@ -42,11 +42,11 @@
       <%= raw @athlete.description %>
     </section>
 
-    <% if @athlete.video_url %>
+    <% unless @athlete.video_embed_code.blank? %>
       <section id="video-section">
         <div id="video-container">
           <hr>
-          <%= embed_youtube(@athlete.video_url) %>
+          <%= raw @athlete.video_embed_code %>
         </div>
       </section>
     <% end %>
