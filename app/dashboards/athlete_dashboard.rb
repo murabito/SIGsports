@@ -67,7 +67,6 @@ class AthleteDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :sport,
-    :news_articles,
     :first_name,
     :last_name,
     :photo_url,
