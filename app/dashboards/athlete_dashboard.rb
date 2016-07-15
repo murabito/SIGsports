@@ -36,8 +36,7 @@ class AthleteDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :first_name,
     :last_name,
-    :sport,
-    :id,
+    :sport
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
