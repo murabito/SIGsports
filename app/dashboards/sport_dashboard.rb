@@ -8,13 +8,13 @@ class SportDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    athletes: Field::HasMany,
+    # athletes: Field::HasMany,
     featured_photos: Field::HasMany,
-    news_articles: Field::HasMany,
-    team_members: Field::HasMany,
-    id: Field::Number,
-    created_at: Field::DateTime,
-    updated_at: Field::DateTime,
+    # news_articles: Field::HasMany,
+    # team_members: Field::HasMany,
+    # id: Field::Number,
+    # created_at: Field::DateTime,
+    # updated_at: Field::DateTime,
     type_id: Field::Number,
   }.freeze
 
@@ -24,22 +24,22 @@ class SportDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
-    :athletes,
+    # :athletes,
     :featured_photos,
-    :news_articles,
-    :team_members,
+    # :news_articles,
+    # :team_members,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
-    :athletes,
+    # :athletes,
     :featured_photos,
-    :news_articles,
-    :team_members,
-    :id,
-    :created_at,
-    :updated_at,
+    # :news_articles,
+    # :team_members,
+    # :id,
+    # :created_at,
+    # :updated_at,
     :type_id,
   ].freeze
 
@@ -47,10 +47,10 @@ class SportDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :athletes,
+    # :athletes,
     :featured_photos,
-    :news_articles,
-    :team_members,
+    # :news_articles,
+    # :team_members,
     :type_id,
   ].freeze
 

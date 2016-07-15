@@ -5,7 +5,6 @@ Rails.application.routes.draw do
     resources :featured_photos
     resources :news_articles
     resources :sports
-    resources :team_members
 
     root to: "admin_users#index"
   end
