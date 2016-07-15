@@ -25,7 +25,8 @@ class AthleteDashboard < Administrate::BaseDashboard
     website_url: Field::String,
     video_url: Field::String,
     american_team_name: Field::String,
-    photo: PhotoField
+    photo: PhotoField,
+    description: Field::Text
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -57,6 +58,7 @@ class AthleteDashboard < Administrate::BaseDashboard
     :weight,
     :website_url,
     :video_url,
+    :description,
     :news_articles,
     :created_at,
     :updated_at
@@ -79,7 +81,8 @@ class AthleteDashboard < Administrate::BaseDashboard
     :height,
     :weight,
     :website_url,
-    :video_url
+    :video_url,
+    :description
   ].freeze
 
   # Overwrite this method to customize how athletes are displayed
