@@ -23,7 +23,7 @@ class AthleteDashboard < Administrate::BaseDashboard
     height: Field::String,
     weight: Field::String,
     website_url: Field::String,
-    video_url: Field::String,
+    video_embed_code: Field::Text,
     american_team_name: Field::String,
     photo: PhotoField,
     description: DescriptionField
@@ -57,7 +57,7 @@ class AthleteDashboard < Administrate::BaseDashboard
     :height,
     :weight,
     :website_url,
-    :video_url,
+    :video_embed_code,
     :description,
     :news_articles,
     :created_at,
@@ -81,7 +81,7 @@ class AthleteDashboard < Administrate::BaseDashboard
     :height,
     :weight,
     :website_url,
-    :video_url,
+    :video_embed_code,
     :description
   ].freeze
 
