@@ -15,7 +15,6 @@ class AthleteDashboard < Administrate::BaseDashboard
     updated_at: Field::DateTime,
     first_name: Field::String,
     last_name: Field::String,
-    photo_url: Field::String,
     position: Field::String,
     american_team_url: Field::String,
     overseas_team: Field::String,
@@ -51,7 +50,6 @@ class AthleteDashboard < Administrate::BaseDashboard
     :updated_at,
     :first_name,
     :last_name,
-    :photo_url,
     :position,
     :american_team_url,
     :overseas_team,
@@ -72,7 +70,6 @@ class AthleteDashboard < Administrate::BaseDashboard
     :sport,
     :first_name,
     :last_name,
-    :photo_url,
     :position,
     :american_team_url,
     :overseas_team,
@@ -89,7 +86,7 @@ class AthleteDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how athletes are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(athlete)
-  #   "Athlete ##{athlete.id}"
-  # end
+  def display_resource(athlete)
+    "#{athlete.first_name} #{athlete.last_name}"
+  end
 end
