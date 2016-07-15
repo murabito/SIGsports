@@ -43,14 +43,12 @@ class AthleteDashboard < Administrate::BaseDashboard
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
-    :sport,
-    :news_articles,
-    :id,
-    :created_at,
-    :updated_at,
     :first_name,
     :last_name,
+    :sport,
+    :photo,
     :position,
+    :american_team_name,
     :american_team_url,
     :overseas_team,
     :college,
@@ -59,8 +57,9 @@ class AthleteDashboard < Administrate::BaseDashboard
     :weight,
     :website_url,
     :video_url,
-    :american_team_name,
-    :photo
+    :news_articles,
+    :created_at,
+    :updated_at
   ].freeze
 
   # FORM_ATTRIBUTES

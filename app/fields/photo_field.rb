@@ -9,6 +9,10 @@ class PhotoField < Administrate::Field::Base
     data.url(:thumb)
   end
 
+  def medium
+    data.url(:medium)
+  end
+
   def to_s
     data
   end
