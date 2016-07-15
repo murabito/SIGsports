@@ -66,10 +66,12 @@ class AthleteDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :sport,
     :first_name,
     :last_name,
+    :sport,
+    :photo,
     :position,
+    :american_team_name,
     :american_team_url,
     :overseas_team,
     :college,
@@ -77,9 +79,7 @@ class AthleteDashboard < Administrate::BaseDashboard
     :height,
     :weight,
     :website_url,
-    :video_url,
-    :american_team_name,
-    :photo
+    :video_url
   ].freeze
 
   # Overwrite this method to customize how athletes are displayed
