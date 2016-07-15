@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160715214656) do
+ActiveRecord::Schema.define(version: 20160715215054) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 20160715214656) do
     t.string   "height"
     t.string   "weight"
     t.string   "website_url"
-    t.string   "video_embed_code"
+    t.text     "video_embed_code"
     t.integer  "sport_id"
     t.string   "american_team_name"
     t.string   "photo_file_name"
