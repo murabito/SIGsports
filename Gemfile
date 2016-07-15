@@ -40,12 +40,12 @@ gem 'figaro'
 
 # Admin panel
 gem 'administrate'
+gem 'ckeditor'
+gem "administrate-field-ckeditor", "~> 0.0.2"
 
 # Image uploads
 gem "paperclip", "~> 5.0.0"
 gem 'aws-sdk', '~> 2.3'
-
-gem 'tinymce-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
