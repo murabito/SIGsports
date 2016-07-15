@@ -26,7 +26,7 @@ class AthleteDashboard < Administrate::BaseDashboard
     video_url: Field::String,
     american_team_name: Field::String,
     photo: PhotoField,
-    description: Field::Text
+    description: DescriptionField
   }.freeze
 
   # COLLECTION_ATTRIBUTES
