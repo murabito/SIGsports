@@ -39,7 +39,7 @@
       </ul>
     </section>
     <section class="athlete-description-box">
-      <%= html_escape @athlete.description.html_safe %>
+      <%= raw @athlete.description %>
     </section>
 
     <% if @athlete.video_url %>
