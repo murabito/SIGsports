@@ -57,7 +57,15 @@ class SportDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how sports are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(sport)
-  #   "Sport ##{sport.id}"
-  # end
+  def display_resource(sport)
+    # "Sport ##{sport.id}"
+    case sport.id 
+    when 0 
+      "Womens Basketball"
+    when 1 
+      "Mens Basketball"
+    when 2 
+      "Football"
+    end
+  end
 end
