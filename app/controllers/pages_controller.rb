@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   
   def index
-    render layout: false
+    @homepage = true
   end
 end

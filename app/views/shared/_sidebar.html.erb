@@ -1,17 +1,19 @@
-<div id="sidebar">
-  <header>
-    <h1>
-      <a href="<%= root_path %>">
-        <%= image_tag 'logo.png', alt: 'SIG Sports' %>
-      </a>
-    </h1>
-  </header>
+<% unless @homepage %>
+  <div id="sidebar">
+    <header>
+      <h1>
+        <a href="<%= root_path %>">
+          <%= image_tag 'logo.png', alt: 'SIG Sports' %>
+        </a>
+      </h1>
+    </header>
 
-  <% if @sport.womens_basketball? %>
-    <%= render 'shared/sidebar_womens_basketball' %>
-  <% elsif @sport.mens_basketball? %>
-    <%= render 'shared/sidebar_mens_basketball' %>
-  <% elsif @sport.football? %>
-    <%= render 'shared/sidebar_football' %>
-  <% end %>
-</div>
+    <% if @sport.womens_basketball? %>
+      <%= render 'shared/sidebar_womens_basketball' %>
+    <% elsif @sport.mens_basketball? %>
+      <%= render 'shared/sidebar_mens_basketball' %>
+    <% elsif @sport.football? %>
+      <%= render 'shared/sidebar_football' %>
+    <% end %>
+  </div>
+<% end %>
