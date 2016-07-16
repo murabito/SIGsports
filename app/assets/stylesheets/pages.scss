@@ -27,7 +27,7 @@
   padding: 0;
   height: 100%;
   width: 33.33%;
-  border-right: #f6f7f8 solid 2px;
+  border-right: #f6f7f8 solid 4px;
   list-style: none;
 }
 
@@ -38,11 +38,10 @@
 #homepage li a {
   text-decoration: none;
   float: left;
-  display: block;
+  display: table;
   width: 100%;
   height: 100%;
   color: #fff;
-  z-index: 1;
 }
 
 #homepage .photo {
@@ -54,14 +53,25 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  opacity: .7;
+  z-index: 1;
 }
 
-#homepage li a span {
-  font-size: 3em;
+#homepage li a:hover {
+  transform: scale(1.1, 1.1);
+  transition: all .5s ease;
+}
+
+#homepage li span {
+  display: table-cell;
+  font-size: 3.5em;
   vertical-align: middle;
   padding-left: 10px;
-  transition: all .5s ease;
+  z-index: 3;
+  letter-spacing: 4px;
+  font-family: "avenir-black";
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.1;
 }
 
 #women {
