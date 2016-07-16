@@ -87,6 +87,18 @@
   background-image: image-url("img_football.jpg");
 }
 
+#homepage .logo {
+  position: fixed;
+  display: inline;
+  bottom: 20px;
+  left: 50%;
+  width: 225px;
+  height: auto;
+  margin-left: -112.5px;
+  text-align: center;
+  z-index: 4;
+}
+
 #about, .what-we-do {
   min-height: 100vh;
   padding: 17.5%;
