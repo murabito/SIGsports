@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 20160717132201) do
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
     t.text     "description"
-    t.boolean  "available",          default: true
+    t.boolean  "is_available",       default: true
   end
 
   add_index "athletes", ["sport_id"], name: "index_athletes_on_sport_id", using: :btree

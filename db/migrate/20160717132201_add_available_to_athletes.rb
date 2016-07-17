@@ -1,5 +1,5 @@
 class AddAvailableToAthletes < ActiveRecord::Migration
   def change
-    add_column :athletes, :available, :boolean, default: true
+    add_column :athletes, :is_available, :boolean, default: true
   end
 end
