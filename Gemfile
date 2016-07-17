@@ -30,6 +30,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Authentication
 gem 'devise'
 
+# Filter Results
+gem 'has_scope'
+
 # font awesome icons
 gem 'font-awesome-rails'
 
