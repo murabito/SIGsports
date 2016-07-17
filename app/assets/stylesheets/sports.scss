@@ -2,6 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.filter-header {
+  font-size: 1.5em;
+  padding: 20px;
+  vertical-align: middle;
+  opacity: .9;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+
+.filter-link {
+  opacity: 1;
+  color: #f6f7f8;
+}
+
+.filter-link:hover {
+  font-weight: bold;
+}
+
 .grid {
   display: block;
   max-width: 100%;
