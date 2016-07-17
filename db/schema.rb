@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160715215054) do
+ActiveRecord::Schema.define(version: 20160717132201) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,8 +35,8 @@ ActiveRecord::Schema.define(version: 20160715215054) do
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "athletes", force: :cascade do |t|
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
     t.string   "first_name"
     t.string   "last_name"
     t.string   "position"
@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(version: 20160715215054) do
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
     t.text     "description"
+    t.boolean  "available",          default: true
   end
 
   add_index "athletes", ["sport_id"], name: "index_athletes_on_sport_id", using: :btree
