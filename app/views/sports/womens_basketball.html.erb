@@ -1,5 +1,9 @@
 <main class="grid">
   <header class="filter-header">
+    <%= link_to 'Guards', womens_basketball_path(position: 'Guard'), class: "filter-link" %>
+    <%= link_to 'Forwards', womens_basketball_path(position: 'Forward'), class: "filter-link" %>
+    <%= link_to 'Centers', womens_basketball_path(position: 'Center'), class: "filter-link" %>
+
     <%= link_to 'All', womens_basketball_path, class: "filter-link" %>
     <%= link_to 'Available', womens_basketball_path(available: true), class: "filter-link" %>
     <%= link_to 'Unavailable', womens_basketball_path(available: false), class: "filter-link" %>
