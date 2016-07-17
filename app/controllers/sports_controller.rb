@@ -1,5 +1,6 @@
 class SportsController < ApplicationController
   has_scope :available, type: :boolean
+  has_scope :position
 
   def womens_basketball
     @sport = Sport.find_by_type_id(0)
