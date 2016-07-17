@@ -1,5 +1,9 @@
 <main class="grid">
   <header class="filter-header">
+    <%= link_to 'Centers', mens_basketball_path(position: 'Center'), class: "filter-link" %>
+    <%= link_to 'Forwards', mens_basketball_path(position: 'Forward'), class: "filter-link" %>
+    <%= link_to 'Guards', mens_basketball_path(position: 'Guard'), class: "filter-link" %>
+
     <%= link_to 'All', mens_basketball_path, class: "filter-link" %>
     <%= link_to 'Available', mens_basketball_path(available: true), class: "filter-link" %>
     <%= link_to 'Unavailable', mens_basketball_path(available: false), class: "filter-link" %>
