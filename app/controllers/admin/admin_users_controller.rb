@@ -1,6 +1,9 @@
 module Admin
   class AdminUsersController < Admin::ApplicationController
-
+    before_action :authenticate_admin_user!
+    
+    @admin = true
+    
     # To customize the behavior of this controller,
     # simply overwrite any of the RESTful actions. For example:
     #
