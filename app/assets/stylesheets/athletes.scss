@@ -75,6 +75,10 @@
   margin: 0 auto;
 }
 
+#video-container p {
+  display: none;
+}
+
 #video-section iframe {
   display: block;
   min-width: 840px;
