@@ -1,12 +1,16 @@
 <main class="grid">
   <header class="filter-header">
-    <%= link_to 'Guards', womens_basketball_path(position: 'Guard'), class: "filter-link" %>
-    <%= link_to 'Forwards', womens_basketball_path(position: 'Forward'), class: "filter-link" %>
-    <%= link_to 'Centers', womens_basketball_path(position: 'Center'), class: "filter-link" %>
+    <ul class="left-filter">
+      <li><%= link_to 'Guards', womens_basketball_path(position: 'Guard'), class: "filter-link" %></li>
+      <li><%= link_to 'Forwards', womens_basketball_path(position: 'Forward'), class: "filter-link" %></li>
+      <li><%= link_to 'Centers', womens_basketball_path(position: 'Center'), class: "filter-link" %></li>
+    </ul>
 
-    <%= link_to 'All', womens_basketball_path, class: "filter-link" %>
-    <%= link_to 'Available', womens_basketball_path(available: true), class: "filter-link" %>
-    <%= link_to 'Unavailable', womens_basketball_path(available: false), class: "filter-link" %>
+    <ul class="right-filter">
+      <li><%= link_to 'All', womens_basketball_path, class: "filter-link" %></li>
+      <li><%= link_to 'Available', womens_basketball_path(available: true), class: "filter-link" %></li>
+      <li><%= link_to 'Unavailable', womens_basketball_path(available: false), class: "filter-link" %></li>
+    </ul>
   </header>
   <% 9.times do |_| %>
     <%= render partial: 'athlete', collection: @athletes %>

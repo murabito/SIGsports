@@ -8,9 +8,9 @@ class SportDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    # athletes: Field::HasMany,
+    athletes: Field::HasMany,
     featured_photos: Field::HasMany,
-    # news_articles: Field::HasMany,
+    news_articles: Field::HasMany,
     # team_members: Field::HasMany,
     # id: Field::Number,
     # created_at: Field::DateTime,
@@ -34,10 +34,10 @@ class SportDashboard < Administrate::BaseDashboard
     :featured_photos,
     :news_articles,
     # :team_members,
-    :id,
+    # :id,
     # :created_at,
     # :updated_at,
-    :type_id,
+    # :type_id,
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -48,7 +48,7 @@ class SportDashboard < Administrate::BaseDashboard
     # :featured_photos,
     # :news_articles,
     # :team_members,
-    :type_id,
+    # :type_id,
   ].freeze
 
   # Overwrite this method to customize how sports are displayed

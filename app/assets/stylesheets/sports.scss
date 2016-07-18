@@ -4,11 +4,17 @@
 
 .filter-header {
   font-size: 1.5em;
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
   vertical-align: middle;
   opacity: .9;
   letter-spacing: 1.25px;
   text-transform: uppercase;
+}
+
+.filter-header:after {
+  clear: both;
+  content: "";
+  display: block;
 }
 
 .filter-link {
@@ -16,8 +22,21 @@
   color: #f6f7f8;
 }
 
-.filter-link:hover {
-  font-weight: bold;
+.left-filter {
+  text-align: left;
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.right-filter {
+  float: right;
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.left-filter li, .right-filter li {
+  display: inline;
+  padding: 0 10px;
 }
 
 .grid {
@@ -66,7 +85,7 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: rgba(69, 73, 77, .9);
+  background: rgba(26, 30, 36, .9);
   opacity: 0;
   transition: all .4s ease-in-out;
   box-sizing: border-box;
