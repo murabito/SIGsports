@@ -1,6 +1,5 @@
 module Admin
   class AdminUsersController < Admin::ApplicationController
-    before_action :authenticate_admin_user!
     
     @admin = true
     
