@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160717132201) do
+ActiveRecord::Schema.define(version: 20160801192923) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(version: 20160717132201) do
     t.datetime "photo_updated_at"
     t.text     "description"
     t.boolean  "is_available",       default: true
+    t.string   "country_code",       default: "US"
   end
 
   add_index "athletes", ["sport_id"], name: "index_athletes_on_sport_id", using: :btree
