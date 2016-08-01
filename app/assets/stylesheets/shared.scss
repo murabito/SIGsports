@@ -5,7 +5,7 @@
   bottom: 0;
   left: 0;
   padding: 20px 50px 30px 50px;
-  background: #f6f7f8;
+  background: #d0cfd1;
   width: 300px;
   min-height: 100%;
   box-sizing: border-box;
@@ -28,7 +28,7 @@ nav {
   padding: 75px 0;
   font-size: 1.5em;
   letter-spacing: 1.5px;
-  font-family: "avenir-black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "avenir-heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -44,7 +44,7 @@ nav li {
 }
 
 #sidebar a {
-  color: #787b80;
+  color: #555;
 }
 
 #sidebar .dropdown-menu {
@@ -67,9 +67,10 @@ nav li {
   text-decoration: none;
 }
 
-#sidebar a:hover,  {
-  color: #b4111e;
+#sidebar a:hover  {
+  color: #c1272d;
   text-decoration: none;
+  background: transparent;
 }
 
 #sidebar footer {
@@ -86,7 +87,6 @@ nav li {
   margin: 0 auto;
 }
 
-
 .social-media-icons li {
   display: inline-block;
   padding: 10px 11.5px;
@@ -94,26 +94,25 @@ nav li {
 
 .social-media-icons li a {
   display: block;
-  color: #f6f7f8;
   width: 46px;
   height: 46px;
   border-radius: 100%;
-  background: #787b80;
+  background: #555;
 }
 
 .social-media-icons li a:hover {
-  background: #f6f7f8;
-  border: solid 2px #787b80;
+  background: #d0cfd1;
+  border: solid 2px #555;
   box-sizing: border-box;
   > i {
-    color: #787b80;
+    color: #555;
   }
 }
 
 .social-media-icons li i {
   display: block;
   padding: 9px 8px;
-  color: #f6f7f8;
+  color: #d0cfd1;
 }
 
 .other-sports {
@@ -126,7 +125,7 @@ nav li {
   padding: 10px 0 0 0;
   display: block;
   margin: 0 auto;
-  color: #787b80;
+  color: #555;
 }
 
 #sidebar:after {

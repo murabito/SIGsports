@@ -1,7 +1,7 @@
 body {
   font: normal 14px "avenir-medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #1a1e24;
-  color: #b3b8c3;
+  background: #0d0d0b;
+  color: #d0cfd1;
 }
 
 a {
@@ -9,12 +9,12 @@ a {
 }
 
 a:hover {
-  color: #b4111e;
+  color: #c1272d;
   text-decoration: none;
 }
 
 .red {
-  color: #b4111e;
+  color: #c1272d;
 }
 
 .black {
@@ -52,14 +52,14 @@ main {
 }
 
 hr {
-  border-color: #b3b8c3;
+  border-color: #d0cfd1;
   margin: 20px;
 }
 
 .box {
   width: 100%;
-  border: solid 1px #f6f7f8;
-  box-shadow: 0 0 3px 0 rgba(246, 247, 248, .3);
+  border: solid 1px #d0cfd1;
+  box-shadow: 0 0 3px 0 rgba(208, 207, 209, .3);
   border-radius: 3px;
   box-sizing: border-box;
 }
@@ -67,8 +67,8 @@ hr {
 #slogan {
   padding: 20px 0;
   font-family: "avenir-heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.5em;
-  color: #b4111e;
+  font-size: 1.75em;
+  color: #c1272d;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
