@@ -53,6 +53,9 @@ gem 'aws-sdk', '~> 2.3'
 # Helper for generating country select box
 gem 'country_select'
 
+# ISO country flags
+gem 'svg-flags-rails', '>= 1.0.0-beta' 
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
