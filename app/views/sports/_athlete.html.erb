@@ -33,6 +33,11 @@
         <span><%= athlete.college %></span>
       </li>
       <li>
+        <div class="flag-container">
+          <%= image_tag 'country-squared/us.svg', class: 'flag-icon', alt: 'US' %>
+        </div>
+      </li>
+      <li>
         <a href="<%= athlete_path(athlete.id) %>" class="grid-item-view-button">FULL BIOGRAPHY</a>
       </li>
     </ul>
