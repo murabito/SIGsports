@@ -15,7 +15,7 @@ class AthleteDashboard < Administrate::BaseDashboard
     updated_at: Field::DateTime,
     first_name: Field::String,
     last_name: Field::String,
-    country_code: Field::String,
+    country_code: CountryField,
     position: Field::String,
     american_team_url: Field::String,
     overseas_team: Field::String,
