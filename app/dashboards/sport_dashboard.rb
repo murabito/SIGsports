@@ -16,6 +16,7 @@ class SportDashboard < Administrate::BaseDashboard
     # created_at: Field::DateTime,
     # updated_at: Field::DateTime,
     type_id: Field::Number,
+    name: Field::String
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -24,7 +25,7 @@ class SportDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
-    :type_id
+    :name
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -44,6 +45,7 @@ class SportDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
+    :name
     # :athletes,
     # :featured_photos,
     # :news_articles,
