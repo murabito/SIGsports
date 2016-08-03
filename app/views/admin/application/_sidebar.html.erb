@@ -19,6 +19,21 @@ as defined by the routes in the `admin/` namespace
       </li>
     <% end %>
   <% else %>
+
+    <li>
+      <%= link_to(
+        'Womens Basketball',
+        admin_sport_path(3),
+        class: "sidebar__link sidebar__link--#{nav_link_state(:sport)}"
+      ) %>
+    </li>
+    <li>
+      <%= link_to(
+        'Mens Basketball',
+        admin_sport_path(4),
+        class: "sidebar__link sidebar__link--#{nav_link_state(:sport)}"
+      ) %>
+    </li> 
     <li>
       <%= link_to(
         'Football',
