@@ -1,4 +1,8 @@
 module AthletesHelper
+  def flag_url(athlete)
+    "country-squared/#{athlete.country_code.downcase}.svg"
+  end
+
   def embed_youtube(youtube_url)
     if youtube_url.match('feature=youtu.be')
       youtube_url = youtube_url.split("&feature=youtu.be").first
