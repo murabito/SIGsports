@@ -14,7 +14,18 @@
       </ul>
     </li>
 
-    <li><a href="<%= womens_basketball_path %>">Clients</a></li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Clients
+      </a>
+      <ul class="dropdown-menu">
+        <li><%= link_to 'WNBA', womens_basketball_path(wnba_status: 'WNBA') %></li>
+        <li><%= link_to 'Professional Overseas', womens_basketball_path(wnba_status: 'Professional Overseas') %></li>
+      </ul>
+    </li>
+
+
+
     <li><a href="#">Contact Us</a></li>
   </ul>
 </nav>
