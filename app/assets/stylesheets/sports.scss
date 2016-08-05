@@ -65,10 +65,13 @@
   display: inline-block;
   margin-top: 0;
   padding: 10px 3px;
-  color: #fff;
   font-family: "avenir-black", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 1.5em;
+}
+
+.athlete-list-name a {
+  color: #fff;
 }
 
 .grid {
