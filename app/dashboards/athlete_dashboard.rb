@@ -27,7 +27,9 @@ class AthleteDashboard < Administrate::BaseDashboard
     video_embed_code: Field::Text,
     american_team_name: Field::String,
     photo: PhotoField,
-    description: DescriptionField
+    description: DescriptionField,
+    wnba_status: Field::String,
+
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -49,6 +51,7 @@ class AthleteDashboard < Administrate::BaseDashboard
     :last_name,
     :sport,
     :photo,
+    :wnba_status,
     :country_code,
     :position,
     :american_team_name,
@@ -74,6 +77,7 @@ class AthleteDashboard < Administrate::BaseDashboard
     :last_name,
     :sport,
     :photo,
+    :wnba_status,
     :country_code,
     :position,
     :american_team_name,
