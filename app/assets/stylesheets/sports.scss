@@ -39,6 +39,38 @@
   padding: 0 10px;
 }
 
+.column {
+  width: 33.33%;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.column-header {
+  margin-top: 0;
+  padding: 10px 0;
+  color: #fff;
+  font-family: "avenir-black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2em;
+}
+
+.athlete-list-item {
+  padding: 5px 0;
+}
+
+.athlete-list-name {
+  display: inline-block;
+  margin-top: 0;
+  padding: 10px 3px;
+  color: #fff;
+  font-family: "avenir-black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
 .grid {
   display: block;
   max-width: 100%;

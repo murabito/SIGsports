@@ -1,0 +1,12 @@
+<div class="athlete-list-item">
+  <div class="flag-container">
+    <%= image_tag flag_url(woman_athlete), class: 'flag-icon', alt: 'US' %>
+  </div>
+  <h3 class="athlete-list-name">
+    <a href="<%= athlete_path(woman_athlete.id) %>">
+      <%= "#{woman_athlete.first_name} #{woman_athlete.last_name}" %>
+    </a>
+  </h3>
+  
+</div>
+
