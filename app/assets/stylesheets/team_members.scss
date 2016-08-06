@@ -65,30 +65,32 @@
   margin-left: -60px;
 }
 
-#team ul .social-media-icons {
-  display: block;
-  padding: 5px 0 0 0;
-  margin: 0 auto;
-}
-
-#team .social-media-icons li {
+.team-social-media-icons li {
   display: inline-block;
-  width: 50px;
 }
 
-#team .social-media-icons li a {
+.team-social-media-icons li a {
   display: block;
   width: 30px;
   height: 30px;
-  background: #b3b8c3;
+  border-radius: 50%;
+  background: #d0cfd1;
+  border: solid 2px #d0cfd1;
 }
 
-#team .social-media-icons li i {
-  padding: 5px;
+.team-social-media-icons li i {
+  padding: 4px 5px;
   font-size: 20px;
-  color: #1a1e24;
+  color: #0d0d0b;
 }
 
+.team-social-media-icons li a:hover {
+  background: #0d0d0b;
+  border: solid 2px #d0cfd1;
+  > i {
+    color: #d0cfd1;
+  }
+}
 
 
 
