@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :featured_photos
     resources :news_articles
     resources :sports
+    resources :testimonials
 
     root to: "admin_users#index"
   end
@@ -13,7 +14,6 @@ Rails.application.routes.draw do
 
   root to: 'pages#index'
 
-  resources :testimonials
   resources :news_articles
   resources :featured_photos
   # resources :sports
