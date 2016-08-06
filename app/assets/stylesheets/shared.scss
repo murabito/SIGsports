@@ -132,3 +132,17 @@ nav li {
   content: ' ';
   clear: both;
 }
+
+#sidebar footer .footer-links {
+  display: inline-block;
+  padding: 10px 2.5px;
+  font-size: 1.25em;
+}
+
+#sidebar footer .footer-links, #sidebar footer .footer-links a {
+  color: #555;
+}
+
+#sidebar footer .footer-links a:hover {
+  color: #c1272d;
+}
