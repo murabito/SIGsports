@@ -14,7 +14,6 @@ Rails.application.routes.draw do
   root to: 'pages#index'
 
   resources :testimonials
-  resources :team_members, except: 'index'
   resources :news_articles
   resources :featured_photos
   # resources :sports
@@ -24,11 +23,9 @@ Rails.application.routes.draw do
   get '/mens-basketball', to: 'sports#mens_basketball'
   get '/football', to: 'sports#football'
 
-  get '/team', to: 'team_members#index'
-
-
   ## Womens Basketball Pages ##
   get '/womens-basketball/about', to: 'pages/womens_basketball#about'
+  get '/womens-basketball/team', to: 'pages/womens_basketball#team'
   get '/womens-basketball/testimonials', to: 'pages/womens_basketball#testimonials'
 
   get '/womens-basketball/professional-management', to: 'pages/womens_basketball#professional_management'
@@ -41,6 +38,7 @@ Rails.application.routes.draw do
 
   ## Mens Basketball Pages ##
   get '/mens-basketball/about', to: 'pages/mens_basketball#about'
+  get '/mens-basketball/team', to: 'pages/mens_basketball#team'
   get '/mens-basketball/testimonials', to: 'pages/mens_basketball#testimonials'
 
   get '/mens-basketball/draft', to: 'pages/mens_basketball#draft_preparation'
@@ -53,6 +51,7 @@ Rails.application.routes.draw do
 
   ## Football Pages ##
   get '/football/about', to: 'pages/football#about'
+  get '/football/team', to: 'pages/football#team'
   get '/football/testimonials', to: 'pages/football#testimonials'
 
   get '/football/professional-management', to: 'pages/football#professional_management'
