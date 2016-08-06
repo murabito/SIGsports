@@ -1,9 +1,14 @@
 <nav class="sidebar">
   <ul>
     <li class="dropdown">
-      <a href="<%= football_about_path %>">
+      <a class="dropdown-toggle" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
         Who We Are
       </a>
+      <ul class="dropdown-menu">
+        <li><a href="<%= football_about_path %>">About Us</a></li>
+        <li><a href="<%= football_team_path %>">Meet Our Team</a></li>
+        <li><a href="<%= football_testimonials_path %>">Testimonials</a></li>
+      </ul>
     </li>
     
     <li class="dropdown">

@@ -1,7 +1,16 @@
 <nav>
   <ul>
-    <li><a href="<%= womens_basketball_about_path %>">Who We Are</a></li>
-    
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Who We Are
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="<%= womens_basketball_about_path %>">About Us</a></li>
+        <li><a href="<%= womens_basketball_team_path %>">Meet Our Team</a></li>
+        <li><a href="<%= womens_basketball_testimonials_path %>">Testimonials</a></li>
+      </ul>
+    </li>
+
     <li class="dropdown">
       <a class="dropdown-toggle" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
         What We Do
