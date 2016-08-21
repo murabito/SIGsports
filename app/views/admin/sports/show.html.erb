@@ -20,6 +20,14 @@ as well as a link to its edit page.
 
 <header class="header">
   <h1 class="header__heading"><%= content_for(:title) %></h1>
+
+  <div class="header__actions">
+    <%= link_to(
+      "Create New Athlete",
+      [:new, namespace, :athlete],
+      class: "button",
+    ) %>
+  </div>
 </header>
 
 <dl>
