@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     resources :athletes
     resources :featured_photos
     resources :news_articles
-    resources :sports
+    resources :sports, only: [:index, :show]
     resources :testimonials
 
     root to: "admin_users#index"
