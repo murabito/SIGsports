@@ -24,8 +24,8 @@ as well as a link to its edit page.
   <div class="header__actions">
     <%= link_to(
       "Create New Athlete",
-      [:new, namespace, :athlete],
-      class: "button",
+      [:new, namespace, :athlete, sport: params[:id] ],
+      class: "button"
     ) %>
   </div>
 </header>
