@@ -169,7 +169,20 @@
   padding: 0 0 20px 0;
 }
 
+.team-member-container {
+  width: 800px;
+  margin: 0 auto;
+}
 
+.team-member-container li {
+  float: left;
+  width: 25%;
+}
+
+.team-member-container li img {
+  width: 100%;
+  max-width: 100%;
+}
 
 
 
