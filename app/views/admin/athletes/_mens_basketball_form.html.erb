@@ -1,0 +1,133 @@
+
+<%#
+# Form Partial
+
+This partial is rendered on a resource's `new` and `edit` pages,
+and renders all form fields for a resource's editable attributes.
+
+## Local variables:
+
+- `page`:
+  An instance of [Administrate::Page::Form][1].
+  Contains helper methods to display a form,
+  and knows which attributes should be displayed in the resource's form.
+
+[1]: http://www.rubydoc.info/gems/administrate/Administrate/Page/Form
+%>
+
+<%= form_for([:admin, page.resource]) do |f| %>
+
+  <%= f.hidden_field :sport_id, value: 4 %>
+
+  <div class="field-unit field-unit--string">
+    <div class="field-unit field-unit__label">
+      <%= f.label :sport_id %>
+    </div>
+    <div class="field-unit field-unit__field">
+      <%= link_to 'Mens Basketball', admin_sport_path(4) %>
+    </div>
+  </div>
+
+  <div class="field-unit field-unit--string">
+    <div class="field-unit field-unit__label">
+      <%= f.label :first_name %>
+    </div>
+    <div class="field-unit field-unit__field">
+      <%= f.text_field :first_name %>
+    </div>
+  </div>
+
+  <div class="field-unit field-unit--string">
+    <div class="field-unit field-unit__label">
+      <%= f.label :last_name %>
+    </div>
+    <div class="field-unit field-unit__field">
+      <%= f.text_field :last_name %>
+    </div>
+  </div>
+
+  <div class="field-unit field-unit--photo-field">
+    <div class="field-unit field-unit__label">
+      <%= f.label :photo %>
+    </div>
+    <div class="field-unit field-unit__field">
+      <%= f.file_field :photo %>
+    </div>
+  </div>
+
+  <div class="field-unit field-unit--date-time">
+    <div class="field-unit field-unit__label">
+      <%= f.label :birthdate %>
+    </div>
+    <div class="field-unit field-unit__field">
+      <%= f.text_field :birthdate, class: 'datetimepicker' %>
+    </div>
+  </div>
+
+  <div class="field-unit field-unit--string">
+    <div class="field-unit field-unit__label">
+      <%= f.label :height %>
+    </div>
+    <div class="field-unit field-unit__field">
+      <%= f.text_field :height %>
+    </div>
+  </div>
+
+  <div class="field-unit field-unit--string">
+    <div class="field-unit field-unit__label">
+      <%= f.label :weight %>
+    </div>
+    <div class="field-unit field-unit__field">
+      <%= f.text_field :weight %>
+    </div>
+  </div>
+
+  <div class="field-unit field-unit--string">
+    <div class="field-unit field-unit__label">
+      <%= f.label :position %>
+    </div>
+    <div class="field-unit field-unit__field">
+      <%= f.text_field :position %>
+    </div>
+  </div>
+
+  <div class="field-unit field-unit--string">
+    <div class="field-unit field-unit__label">
+      <%= f.label :website_url %>
+    </div>
+    <div class="field-unit field-unit__field">
+      <%= f.text_field :website_url %>
+    </div>
+  </div>
+
+  <div class="field-unit field-unit--string">
+    <div class="field-unit field-unit__label">
+      <%= f.label :american_team_name %>
+    </div>
+    <div class="field-unit field-unit__field">
+      <%= f.text_field :american_team_name %>
+    </div>
+  </div>
+
+  <div class="field-unit field-unit--string">
+    <div class="field-unit field-unit__label">
+      <%= f.label :american_team_url %>
+    </div>
+    <div class="field-unit field-unit__field">
+      <%= f.text_field :american_team_url %>
+    </div>
+  </div>
+
+  <div class="field-unit field-unit--string">
+    <div class="field-unit field-unit__label">
+      <%= f.label :college %>
+    </div>
+    <div class="field-unit field-unit__field">
+      <%= f.text_field :college %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit %>
+  </div>
+<% end %>

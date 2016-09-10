@@ -30,6 +30,17 @@ and renders all form fields for a resource's editable attributes.
     </div>
   <% end %>
 
+  <%= f.hidden_field :sport_id, value: 3 %>
+
+  <div class="field-unit field-unit--string">
+    <div class="field-unit field-unit__label">
+      <%= f.label :sport_id %>
+    </div>
+    <div class="field-unit field-unit__field">
+      <%= link_to 'Womens Basketball', admin_sport_path(3) %>
+    </div>
+  </div>
+
   <% page.attributes.each do |attribute| -%>
     <div class="field-unit field-unit--<%= attribute.html_class %>">
       <%= render_field attribute, f: f %>

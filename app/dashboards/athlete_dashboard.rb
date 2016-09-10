@@ -75,7 +75,6 @@ class AthleteDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :first_name,
     :last_name,
-    :sport,
     :photo,
     :wnba_status,
     :country_code,
