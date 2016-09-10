@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160805202946) do
+ActiveRecord::Schema.define(version: 20160910181234) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -75,7 +75,6 @@ ActiveRecord::Schema.define(version: 20160805202946) do
   add_index "featured_photos", ["sport_id"], name: "index_featured_photos_on_sport_id", using: :btree
 
   create_table "news_articles", force: :cascade do |t|
-    t.integer  "athlete_id"
     t.integer  "sport_id"
     t.string   "headline",    null: false
     t.date     "date_posted"
@@ -84,7 +83,6 @@ ActiveRecord::Schema.define(version: 20160805202946) do
     t.datetime "updated_at",  null: false
   end
 
-  add_index "news_articles", ["athlete_id"], name: "index_news_articles_on_athlete_id", using: :btree
   add_index "news_articles", ["sport_id"], name: "index_news_articles_on_sport_id", using: :btree
 
   create_table "sports", force: :cascade do |t|
