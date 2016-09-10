@@ -9,7 +9,6 @@ class NewsArticleDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     sport: Field::BelongsTo,
-    athlete: Field::BelongsTo,
     id: Field::Number,
     headline: Field::String,
     date_posted: Field::DateTime,
@@ -25,22 +24,17 @@ class NewsArticleDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :sport,
-    :athlete,
-    :id,
-    :headline,
+    :date_posted,
+    :headline
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :sport,
-    :athlete,
-    :id,
     :headline,
-    :date_posted,
     :url,
-    :created_at,
-    :updated_at,
+    :date_posted
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -48,10 +42,9 @@ class NewsArticleDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :sport,
-    :athlete,
     :headline,
-    :date_posted,
     :url,
+    :date_posted
   ].freeze
 
   # Overwrite this method to customize how news articles are displayed
