@@ -42,13 +42,13 @@ as defined by the routes in the `admin/` namespace
       ) %>
     </li>
 
+    <li>
+      <%= link_to(
+        'Admin Users',
+        admin_admin_users_path,
+        class: "sidebar__link sidebar__link--#{nav_link_state(:admin_users)}"
+      ) %>
+    </li>
+
   <% end %>
 </ul>
-
-
-
-
-
-
-
-

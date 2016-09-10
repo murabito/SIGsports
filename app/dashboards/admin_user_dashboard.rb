@@ -37,7 +37,6 @@ class AdminUserDashboard < Administrate::BaseDashboard
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
-    :id,
     :email,
     :sign_in_count,
     :current_sign_in_at,
@@ -59,7 +58,7 @@ class AdminUserDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how admin users are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(admin_user)
-  #   "AdminUser ##{admin_user.id}"
-  # end
+  def display_resource(admin_user)
+    "AdminUser: #{admin_user.email}"
+  end
 end
