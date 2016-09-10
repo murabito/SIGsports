@@ -24,4 +24,11 @@ to do the heavy lifting.
   </div>
 </header>
 
-<%= render 'form', page: page %>
+<% if params[:sport] == "3" %>
+  <%= render 'womens_basketball_form', page: page %>
+<% elsif params[:sport] == "4" %>
+  <%= render 'mens_basketball_form', page: page %>
+<% elsif params[:sport] == "2" %>
+  <%= render 'football_form', page: page %>
+<% end %>
+
