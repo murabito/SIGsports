@@ -7,10 +7,9 @@
 
     <% @news_articles.each do | article | %>
       <a href="<%= article.url %>">
-        <h3><%= article.headline %></h3>
+        <h3 class="red"><%= article.headline %></h3>
         <h4><%= article.date_posted %></h4>
       </a>
     <% end %>
-
   </section>
 </main>
