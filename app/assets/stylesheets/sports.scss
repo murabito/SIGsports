@@ -167,6 +167,21 @@
   background: #fff;
 }
 
+.news-section {
+  overflow: hidden;
+  float: right;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 350px;
+  min-height: 100%;
+  padding: 20px 50px 30px 50px;
+  border-left: solid 5px #d0cfd1;
+  background: #0d0d0b;
+  box-sizing: border-box;
+}
+
 @media (max-width: 1835px) {
   .grid-item { 
     width: 25%;
