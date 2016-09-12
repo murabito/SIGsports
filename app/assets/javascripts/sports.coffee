@@ -1,9 +1,9 @@
 $ ->
 
   $('.slider').slick({
-    arrows: true,
-    dots: true,
+    arrows: false,
+    dots: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
   })
