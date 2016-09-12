@@ -5,7 +5,7 @@ class SportsController < ApplicationController
 
   def womens_basketball_featured
     @sport = Sport.find_by_type_id(0)
-
+    @news_articles = apply_scopes(NewsArticle).where(sport_id: 3)
   end
   
   def womens_basketball

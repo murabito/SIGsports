@@ -1,6 +1,16 @@
 <main>
-  <div class="slider">
+  <section class="slider">
     <div><%= image_tag 'featured/womens_basketball/img_featured_women' %></div>
-    <div><%= image_tag 'featured/womens_basketball/img_featured_women' %></div>
-  </div>
+  </section>
+  <section class="news-section">
+    <h2>WOMEN'S BASKETBALL NEWS</h2>
+
+    <% @news_articles.each do | article | %>
+      <a href="<%= article.url %>">
+        <h3><%= article.headline %></h3>
+        <h4><%= article.date_posted %></h4>
+      </a>
+    <% end %>
+
+  </section>
 </main>
