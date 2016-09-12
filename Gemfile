@@ -54,7 +54,10 @@ gem 'aws-sdk', '~> 2.3'
 gem 'country_select'
 
 # ISO country flags
-gem 'svg-flags-rails', '>= 1.0.0-beta' 
+gem 'svg-flags-rails', '>= 1.0.0-beta'
+
+# Debugging
+gem 'pry'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
