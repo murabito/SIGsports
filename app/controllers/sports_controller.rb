@@ -8,9 +8,16 @@ class SportsController < ApplicationController
     @news_articles = apply_scopes(NewsArticle).where(sport_id: 3)
   end
   
-  def womens_basketball
+  def womens_basketball_wnba
     @sport = Sport.find_by_type_id(0)
-    @athletes = apply_scopes(Athlete).where(sport_id: 3)
+    @athletes = apply_scopes(Athlete).where(sport_id: 3).where(wnba_status: 'WNBA')
+    render 'womens_basketball'
+  end
+
+  def womens_basketball_overseas
+    @sport = Sport.find_by_type_id(0)
+    @athletes = apply_scopes(Athlete).where(sport_id: 3).where(wnba_status: 'Professional Overseas')
+    render 'womens_basketball'
   end
   
   def mens_basketball
