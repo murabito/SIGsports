@@ -1,9 +1,8 @@
 <main class="grid">
   <header class="filter-header">
     <ul class="left-filter">
-      <li><%= link_to 'Guards', womens_basketball_path(position: 'Guard'), class: "filter-link" %></li>
-      <li><%= link_to 'Forwards', womens_basketball_path(position: 'Forward'), class: "filter-link" %></li>
-      <li><%= link_to 'Centers', womens_basketball_path(position: 'Center'), class: "filter-link" %></li>
+      <li><%= link_to 'WNBA', womens_basketball_path(wnba_status: 'WNBA'), class: "filter-link" %></li>
+      <li><%= link_to 'Professional Overseas', womens_basketball_path(wnba_status: 'Professional Overseas'), class: "filter-link" %></li>
     </ul>
 
     <ul class="right-filter">
@@ -12,7 +11,6 @@
       <li><%= link_to 'Unavailable', womens_basketball_path(available: false), class: "filter-link" %></li>
     </ul>
   </header>
-  
 
   <div class="column">
     <h2 class="column-header">Guards</h2>
