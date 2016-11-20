@@ -9,7 +9,6 @@ class AthleteDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     sport: Field::BelongsTo,
-    news_articles: Field::HasMany,
     id: Field::Number,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
@@ -28,8 +27,7 @@ class AthleteDashboard < Administrate::BaseDashboard
     american_team_name: Field::String,
     photo: PhotoField,
     description: DescriptionField,
-    wnba_status: Field::String,
-
+    wnba_status: Field::String
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -64,7 +62,6 @@ class AthleteDashboard < Administrate::BaseDashboard
     :website_url,
     :video_embed_code,
     :description,
-    :news_articles,
     :created_at,
     :updated_at
   ].freeze
