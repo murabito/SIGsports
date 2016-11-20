@@ -20,7 +20,7 @@
   float: left;
   overflow: hidden;
   min-width: 150px;
-  width: 23.75%;
+  width: 24.75%;
   max-width: 450px;
   padding: 0 1% 0 0;
 }
@@ -58,19 +58,20 @@
 }
 
 #team ul footer {
-  display: block;
+  display: inline-block;
   width: 120px;
   position: relative;
   left: 50%;
   margin-left: -60px;
 }
 
-.team-social-media-icons li {
+#team ul footer .team-social-media-icons li {
   display: inline-block;
+  min-width: 30px;
 }
 
-.team-social-media-icons li a {
-  display: block;
+#team ul footer .team-social-media-icons li a {
+  display: inline-block;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -78,13 +79,13 @@
   border: solid 2px #d0cfd1;
 }
 
-.team-social-media-icons li i {
+#team ul footer .team-social-media-icons li i {
   padding: 4px 5px;
   font-size: 20px;
   color: #0d0d0b;
 }
 
-.team-social-media-icons li a:hover {
+#team ul footer .team-social-media-icons li a:hover {
   background: #0d0d0b;
   border: solid 2px #d0cfd1;
   > i {
