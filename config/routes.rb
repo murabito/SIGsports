@@ -25,6 +25,8 @@ Rails.application.routes.draw do
 
   ## Sport homepages ##
   get '/womens-basketball/featured', to: 'sports#womens_basketball_featured'
+  get 'womens-basketball/wnba', to: 'sports#womens_basketball_wnba'
+  get 'womens-basketball/overseas', to: 'sports#womens_basketball_overseas'
 
   ## Womens Basketball Pages ##
   get '/womens-basketball/about', to: 'pages/womens_basketball#about'
