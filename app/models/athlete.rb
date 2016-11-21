@@ -5,6 +5,7 @@ class Athlete < ActiveRecord::Base
   validates_attachment_content_type :photo, content_type: /\Aimage\/.*\Z/
 
   scope :available, -> { where(is_available: true) }
+  scope :unavailable, -> { where(is_available: false) }
   scope :position, -> position { where(position: position) }
   scope :wnba_status, -> wnba_status { where(wnba_status: wnba_status) }
 end

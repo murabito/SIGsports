@@ -1,14 +1,8 @@
 <main class="grid">
   <header class="filter-header">
-    <ul class="left-filter">
-      <li><%= link_to 'WNBA', womens_basketball_path(wnba_status: 'WNBA'), class: "filter-link" %></li>
-      <li><%= link_to 'Professional Overseas', womens_basketball_path(wnba_status: 'Professional Overseas'), class: "filter-link" %></li>
-    </ul>
-
     <ul class="right-filter">
-      <li><%= link_to 'All', womens_basketball_path, class: "filter-link" %></li>
-      <li><%= link_to 'Available', womens_basketball_path(available: true), class: "filter-link" %></li>
-      <li><%= link_to 'Unavailable', womens_basketball_path(available: false), class: "filter-link" %></li>
+      <li><%= link_to 'Available', womens_basketball_wnba_path(available: true), class: "filter-link" %></li>
+      <li><%= link_to 'Unavailable', womens_basketball_wnba_path(unavailable: true), class: "filter-link" %></li>
     </ul>
   </header>
 

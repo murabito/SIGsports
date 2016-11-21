@@ -1,5 +1,6 @@
 class SportsController < ApplicationController
   has_scope :available, type: :boolean
+  has_scope :unavailable, type: :boolean
   has_scope :position
   has_scope :wnba_status
 
