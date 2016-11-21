@@ -8,6 +8,16 @@ class SportsController < ApplicationController
     @sport = Sport.find_by_type_id(0)
     @news_articles = apply_scopes(NewsArticle).where(sport_id: 3)
   end
+
+  def mens_basketball_featured
+    @sport = Sport.find_by_type_id(1)
+    @news_articles = apply_scopes(NewsArticle).where(sport_id: 4)
+  end
+
+  def football_featured
+    @sport = Sport.find_by_type_id(2)
+    @news_articles = apply_scopes(NewsArticle).where(sport_id: 2)
+  end
   
   def womens_basketball_wnba
     @sport = Sport.find_by_type_id(0)

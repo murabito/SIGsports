@@ -1,0 +1,15 @@
+<main>
+  <section class="slider">
+    <%= image_tag 'featured/womens_basketball/img_featured_women', class: 'slider-img' %>
+  </section>
+  <section class="news-section">
+    <h2>Football News</h2>
+
+    <% @news_articles.each do | article | %>
+      <a href="<%= article.url %>">
+        <h3 class="red"><%= article.headline %></h3>
+        <h4><%= article.date_posted %></h4>
+      </a>
+    <% end %>
+  </section>
+</main>
