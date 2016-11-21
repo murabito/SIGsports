@@ -1,10 +1,4 @@
 <main class="grid">
-  <header class="filter-header">
-    <ul class="right-filter">
-      <li><%= link_to 'Available', football_path(available: true), class: "filter-link" %></li>
-      <li><%= link_to 'Unavailable', football_path(unavailable: true), class: "filter-link" %></li>
-    </ul>
-  </header>
   <% 9.times do |_| %>
     <%= render partial: 'athlete', collection: @athletes %>
   <% end %>
