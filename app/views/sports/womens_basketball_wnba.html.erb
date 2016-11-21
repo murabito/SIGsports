@@ -1,10 +1,12 @@
-<main class="grid">
+<main class="sports grid">
   <header class="filter-header">
     <ul class="right-filter">
       <li><%= link_to 'Available', womens_basketball_wnba_path(available: true), class: "filter-link" %></li>
       <li><%= link_to 'Unavailable', womens_basketball_wnba_path(unavailable: true), class: "filter-link" %></li>
     </ul>
   </header>
+
+  <h1>CURRENT WNBA CLIENTS</h1>
 
   <%= render partial: 'womens_basketball' %>
 </main>

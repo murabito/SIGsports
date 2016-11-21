@@ -116,7 +116,7 @@
   font-size: 1.5em;  
 }
 
-#about h1, .what-we-do h1  {
+#about h1, .what-we-do h1, .sports h1 {
   padding: 20px 0;
   font-family: "avenir-black", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2em;
@@ -124,6 +124,10 @@
   text-align: center;
   letter-spacing: 2px;
   color: #c1272d;
+}
+
+.sports h1 {
+  font-size: 2.5em;
 }
 
 .what-we-do h2 {
