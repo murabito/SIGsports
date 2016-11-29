@@ -69,6 +69,9 @@ Rails.application.routes.draw do
 
   get '/football/contact', to: 'pages/football#contact'
 
+  ## Team Member Page ##
+  get '/team_member/:id', to: 'team_members#show'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
