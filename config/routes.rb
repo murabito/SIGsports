@@ -70,7 +70,7 @@ Rails.application.routes.draw do
   get '/football/contact', to: 'pages/football#contact'
 
   ## Team Member Page ##
-  get '/team_member/:id', to: 'team_members#show'
+  get '/team_member/:id', to: 'team_members#show', as: :team_member
 
 
   # The priority is based upon order of creation: first created -> highest priority.
