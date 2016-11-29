@@ -13,20 +13,16 @@
   width: 100%;
   position: relative;
   top: 25%;
-  padding: 0 0 0 1%;
+  padding: 0 0 0 2%;
 }
 
 #team li {
   float: left;
   overflow: hidden;
   min-width: 150px;
-  width: 24.75%;
+  width: 19.75%;
   max-width: 450px;
   padding: 0 1% 0 0;
-}
-
-#team li:nth-of-type(4n) {
-  padding-right: 0%;
 }
 
 #team img {
