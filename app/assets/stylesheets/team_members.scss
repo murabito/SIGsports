@@ -20,9 +20,20 @@
   float: left;
   overflow: hidden;
   min-width: 150px;
-  width: 19.75%;
   max-width: 450px;
   padding: 0 1% 0 0;
+}
+
+#team.womens-basketball li {
+  width: 19.75%;
+}
+
+#team.mens-basketball li {
+  width: 22.75%;
+}
+
+#team.football li {
+  width: 25%;
 }
 
 #team img {
