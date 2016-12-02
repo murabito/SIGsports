@@ -1,3 +1,15 @@
-<main>
-  <h1><%= @team_member.first_name %></h1>
+<main class="team-member">
+  <section class="image-container">
+    <figure>
+      <%= image_tag 'img_boris.jpg', alt: 'Boris', class: 'grid-item-image' %>
+    </figure>
+  </section>
+
+  <section class="description">
+    <h1><%= @team_member.first_name + ' ' + @team_member.last_name %></h1>
+    <h2 class="red uppercase"><%= @team_member.position %></h2>
+
+    <%= raw(@team_member.description) %>
+  </section>
+
 </main>
