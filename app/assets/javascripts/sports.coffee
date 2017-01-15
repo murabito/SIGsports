@@ -5,5 +5,5 @@ $ ->
     dots: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2000,
-  })
+    autoplaySpeed: 1000,
+  });
