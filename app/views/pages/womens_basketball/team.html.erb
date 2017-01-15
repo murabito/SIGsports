@@ -4,7 +4,7 @@
     <li>
       <a href="<%= team_member_path(id: 1, sport: 'womens-basketball') %>">
         <figure>
-          <%= image_tag 'img_boris.jpg', alt: 'Boris', class: 'grid-item-image' %>
+          <%= image_tag 'team/boris.jpg', alt: 'Boris', class: 'grid-item-image' %>
         </figure>
         <h2>Boris Lelchitski</h2>
         <h3 class="red">Founder &amp; CEO</h3>
@@ -12,7 +12,7 @@
       <footer>
         <ul class="team-social-media-icons">
           <li class="one-icon">
-            <a href="#"><%= fa_icon "twitter 2x" %></a>
+            <a href="#"><%= fa_icon "envelope-o", class: "email" %></a>
           </li>
         </ul>
       </footer>
@@ -21,7 +21,24 @@
     <li>
       <a href="#">
         <figure>
-          <%= image_tag 'img_boris.jpg', alt: 'Boris', class: 'grid-item-image' %>
+          <%= image_tag 'team/carolina.jpg', alt: 'Boris', class: 'grid-item-image' %>
+        </figure>
+        <h2>Boris Lelchitski</h2>
+        <h3 class="red">Founder &amp; CEO</h3>
+      </a>
+      <footer>
+        <ul class="team-social-media-icons">
+          <li class="one-icon">
+            <a href="#"><%= fa_icon "envelope-o", class: "email" %></a>
+          </li>
+        </ul>
+      </footer>
+    </li>
+
+    <li>
+      <a href="#">
+        <figure>
+          <%= image_tag 'team/ticha.jpg', alt: 'Boris', class: 'grid-item-image' %>
         </figure>
         <h2>Boris Lelchitski</h2>
         <h3 class="red">Founder &amp; CEO</h3>
@@ -29,10 +46,32 @@
       <footer>
         <ul class="team-social-media-icons">
           <li class="first-of-two-icons">
-            <a href="#"><%= fa_icon "twitter 2x" %></a>
+            <a href="#"><%= fa_icon "envelope-o", class: "email" %></a>
+
+
           </li>
           <li class="second-of-two-icons">
-            <a href="#"><%= fa_icon "twitter 2x" %></a>
+            <a href="#"><%= fa_icon "twitter", class: "twitter" %></a>
+          </li>
+        </ul>
+      </footer>
+    </li>
+
+    <li>
+      <a href="#">
+        <figure>
+          <%= image_tag 'team/sammy.jpg', alt: 'Boris', class: 'grid-item-image' %>
+        </figure>
+        <h2>Boris Lelchitski</h2>
+        <h3 class="red">Founder &amp; CEO</h3>
+      </a>
+      <footer>
+        <ul class="team-social-media-icons">
+          <li class="first-of-two-icons">
+            <a href="#"><%= fa_icon "envelope-o", class: "email" %></a>
+          </li>
+          <li class="second-of-two-icons">
+            <a href="#"><%= fa_icon "twitter", class: "twitter" %></a>
           </li>
         </ul>
       </footer>
@@ -49,59 +88,13 @@
       <footer>
         <ul class="team-social-media-icons">
           <li class="first-of-three-icons">
-            <a href="#"><%= fa_icon "twitter 2x" %></a>
+            <a href="#"><%= fa_icon "envelope-o", class: "email" %></a>
           </li>
           <li class="second-of-three-icons">
-            <a href="#"><%= fa_icon "twitter 2x" %></a>
+            <a href="#"><%= fa_icon "twitter", class: "twitter" %></a>
           </li>
           <li class="third-of-three-icons">
-            <a href="#"><%= fa_icon "twitter 2x" %></a>
-          </li>
-        </ul>
-      </footer>
-    </li>
-
-    <li>
-      <a href="#">
-        <figure>
-          <%= image_tag 'img_boris.jpg', alt: 'Boris', class: 'grid-item-image' %>
-        </figure>
-        <h2>Boris Lelchitski</h2>
-        <h3 class="red">Founder &amp; CEO</h3>
-      </a>
-      <footer>
-        <ul class="team-social-media-icons">
-          <li class="first-of-three-icons">
-            <a href="#"><%= fa_icon "twitter 2x" %></a>
-          </li>
-          <li class="second-of-three-icons">
-            <a href="#"><%= fa_icon "twitter 2x" %></a>
-          </li>
-          <li class="third-of-three-icons">
-            <a href="#"><%= fa_icon "twitter 2x" %></a>
-          </li>
-        </ul>
-      </footer>
-    </li>
-
-    <li>
-      <a href="#">
-        <figure>
-          <%= image_tag 'img_boris.jpg', alt: 'Boris', class: 'grid-item-image' %>
-        </figure>
-        <h2>Boris Lelchitski</h2>
-        <h3 class="red">Founder &amp; CEO</h3>
-      </a>
-      <footer>
-        <ul class="team-social-media-icons">
-          <li class="first-of-three-icons">
-            <a href="#"><%= fa_icon "twitter 2x" %></a>
-          </li>
-          <li class="second-of-three-icons">
-            <a href="#"><%= fa_icon "twitter 2x" %></a>
-          </li>
-          <li class="third-of-three-icons">
-            <a href="#"><%= fa_icon "twitter 2x" %></a>
+            <a href="#"><%= fa_icon "facebook", class: "facebook" %></a>
           </li>
         </ul>
       </footer>

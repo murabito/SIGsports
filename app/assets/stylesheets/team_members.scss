@@ -130,8 +130,20 @@
 
 #team ul footer .team-social-media-icons li i {
   padding: 4px 5px;
-  font-size: 20px;
   color: #0d0d0b;
+}
+
+#team ul footer .team-social-media-icons li i.email {
+  font-size: 18px;
+}
+
+#team ul footer .team-social-media-icons li i.twitter {
+  font-size: 20px;
+}
+
+#team ul footer .team-social-media-icons li i.facebook {
+  padding: 5px;
+  font-size: 18px;
 }
 
 #team ul footer .team-social-media-icons li a:hover {
@@ -177,27 +189,3 @@
   font-size: 1.25em;
   line-height: 1.5;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
