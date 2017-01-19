@@ -77,7 +77,10 @@ Rails.application.routes.draw do
   get 'ticha', to: 'pages/womens_basketball#ticha'
   get 'sammy', to: 'pages/womens_basketball#sammy'
   get 'jonathan', to: 'pages/womens_basketball#jonathan'
-  
+
+  get 'boris-mens', to: 'pages/mens_basketball#boris', as: 'boris_mens'
+
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
