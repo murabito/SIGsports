@@ -79,6 +79,9 @@ Rails.application.routes.draw do
   get 'jonathan', to: 'pages/womens_basketball#jonathan'
 
   get 'boris-mens', to: 'pages/mens_basketball#boris', as: 'boris_mens'
+  get 'michael', to: 'pages/mens_basketball#michael', as: 'michael'
+  get 'sammy-mens', to: 'pages/mens_basketball#sammy', as: 'sammy_mens'
+  get 'jonathan-mens', to: 'pages/mens_basketball#jonathan', as: 'jonathan_mens'
 
 
 
