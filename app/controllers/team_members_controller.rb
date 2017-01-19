@@ -1,8 +1,8 @@
 class TeamMembersController < ApplicationController
-  def show
-    @sport = find_sport(params[:sport])
-    @team_member = TeamMember.find(params[:id])
-  end
+  # def show
+  #   @sport = find_sport(params[:sport])
+  #   @team_member = TeamMember.find(params[:id])
+  # end
 
   def find_sport(sport_param)
     if sport_param == 'womens-basketball'

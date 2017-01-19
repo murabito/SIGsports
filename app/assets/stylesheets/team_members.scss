@@ -158,7 +158,8 @@
 .team-member .image-container {
   float: left;
   width: 450px;
-  padding: 50px 0 50px 50px;
+  padding: 50px 0 40px 50px;
+  margin-right: 50px;
   box-sizing: border-box;
 }
 
@@ -171,7 +172,6 @@
 }
 
 .team-member .description {
-  overflow: hidden;
   padding: 50px;
 }
 
