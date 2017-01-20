@@ -16,7 +16,7 @@ class AthleteDashboard < Administrate::BaseDashboard
     last_name: Field::String,
     country_code: CountryField,
     position: SelectField.with_options(
-      choices: ['Center', 'Forward', 'Guard']
+      choices: ['', 'Center', 'Forward', 'Guard']
     ),
     american_team_url: Field::String,
     overseas_team: Field::String,
@@ -30,10 +30,10 @@ class AthleteDashboard < Administrate::BaseDashboard
     photo: PhotoField,
     description: DescriptionField,
     wnba_status: SelectField.with_options(
-      choices: ['WNBA', 'Professional Overseas']
+      choices: ['', 'WNBA', 'Professional Overseas']
     ),
     nfl_status: SelectField.with_options(
-      choices: ['NFL', 'Free Agent']
+      choices: ['', 'NFL', 'Free Agent']
     )
   }.freeze
 
