@@ -180,16 +180,30 @@
   padding: 10px 30px;
 }
 
-.featured {
+#featured {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 300px;
+  bottom: 0;
+}
+
+.item {
   position: relative;
-  margin-right: 350px;
+  min-width: 100%;
   min-height: 100vh;
   overflow: hidden;
 }
 
 .featured-img {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-25%, -25%);
+  min-width: 100%;
   min-height: 100vh;
 }
+
 
 .news-section {
   position: fixed;
