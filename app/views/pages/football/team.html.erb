@@ -2,37 +2,34 @@
   <section id="team" class="football">
   <ul>
     <li>
-      <a href="#">
+      <a href="<%= boris_football_path %>">
         <figure>
-          <%= image_tag 'img_boris.jpg', alt: 'Boris', class: 'grid-item-image' %>
+          <%= image_tag 'team/boris.jpg', alt: 'Boris', class: 'grid-item-image' %>
         </figure>
         <h2>Boris Lelchitski</h2>
-        <h3 class="red">Founder &amp; CEO</h3>
+        <h3 class="red">FOUNDER &amp; CEO</h3>
       </a>
       <footer>
         <ul class="team-social-media-icons">
           <li class="one-icon">
-            <a href="#"><%= fa_icon "twitter 2x" %></a>
+            <a href="mailto:Borissig@aol.com"><%= fa_icon "envelope-o", class: "email" %></a>
           </li>
         </ul>
       </footer>
     </li>
     
     <li>
-      <a href="#">
+      <a href="<%= chad_path %>">
         <figure>
-          <%= image_tag 'img_boris.jpg', alt: 'Boris', class: 'grid-item-image' %>
+          <%= image_tag 'team/chad.jpg', alt: 'Chad', class: 'grid-item-image' %>
         </figure>
-        <h2>Boris Lelchitski</h2>
-        <h3 class="red">Founder &amp; CEO</h3>
+        <h2>Chad E. Wiestling</h2>
+        <h3 class="red">President of SIG Football</h3>
       </a>
       <footer>
         <ul class="team-social-media-icons">
-          <li class="first-of-two-icons">
-            <a href="#"><%= fa_icon "twitter 2x" %></a>
-          </li>
-          <li class="second-of-two-icons">
-            <a href="#"><%= fa_icon "twitter 2x" %></a>
+          <li class="one-icon">
+            <a href="mailto:wiestling@sigsports.com"><%= fa_icon "envelope-o", class: "email" %></a>
           </li>
         </ul>
       </footer>

@@ -31,6 +31,9 @@ Rails.application.routes.draw do
   get 'womens-basketball/wnba', to: 'sports#womens_basketball_wnba'
   get 'womens-basketball/overseas', to: 'sports#womens_basketball_overseas'
 
+  get 'football/nfl', to: 'sports#football_nfl'
+  get 'football/free-agent', to: 'sports#football_free_agent'
+
   ## Womens Basketball Pages ##
   get '/womens-basketball/about', to: 'pages/womens_basketball#about'
   get '/womens-basketball/team', to: 'pages/womens_basketball#team'
@@ -69,8 +72,22 @@ Rails.application.routes.draw do
 
   get '/football/contact', to: 'pages/football#contact'
 
-  ## Team Member Page ##
-  get '/team_member/:id', to: 'team_members#show', as: :team_member
+  ## Team Member Pages ##
+  
+  # get '/team_member/:id', to: 'team_members#show', as: :team_member
+  get 'boris', to: 'pages/womens_basketball#boris'
+  get 'carolina', to: 'pages/womens_basketball#carolina'
+  get 'ticha', to: 'pages/womens_basketball#ticha'
+  get 'sammy', to: 'pages/womens_basketball#sammy'
+  get 'jonathan', to: 'pages/womens_basketball#jonathan'
+
+  get 'boris-mens', to: 'pages/mens_basketball#boris', as: 'boris_mens'
+  get 'michael', to: 'pages/mens_basketball#michael', as: 'michael'
+  get 'sammy-mens', to: 'pages/mens_basketball#sammy', as: 'sammy_mens'
+  get 'jonathan-mens', to: 'pages/mens_basketball#jonathan', as: 'jonathan_mens'
+
+  get 'boris-football', to: 'pages/football#boris', as: 'boris_football'
+  get 'chad', to: 'pages/football#chad'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

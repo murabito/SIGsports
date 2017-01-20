@@ -87,7 +87,7 @@ and renders all form fields for a resource's editable attributes.
       <%= f.label :position %>
     </div>
     <div class="field-unit field-unit__field">
-      <%= f.text_field :position %>
+      <%= f.select(:position, ['Center', 'Forward', 'Guard']) %>
     </div>
   </div>
 

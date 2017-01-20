@@ -15,7 +15,7 @@
       </li>
       <li>
         <span>Born:</span>
-        <span><%= athlete.birthdate.strftime("%m/%d/%Y") %></span>
+        <span><%= athlete.birthdate.strftime("%m/%d/%Y") if athlete.birthdate %></span>
       </li>
       <li>
         <span>Height:</span>
@@ -38,7 +38,9 @@
         </div>
       </li>
       <li>
-        <a href="<%= athlete_path(athlete.id) %>" class="grid-item-view-button">FULL BIOGRAPHY</a>
+        <% unless @sport.id == 2 %>
+          <a href="<%= athlete_path(athlete.id) %>" class="grid-item-view-button">FULL BIOGRAPHY</a>
+        <% end %>
       </li>
     </ul>
   </div>

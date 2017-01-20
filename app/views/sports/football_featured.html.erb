@@ -1,7 +1,30 @@
 <main>
-  <section class="slider">
-    <%= image_tag 'featured/womens_basketball/img_featured_women', class: 'slider-img' %>
+  <section id="featured">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <%= image_tag "featured/football/photo1", class: 'featured-img' %>
+        </div>
+
+        <div class="item">
+          <%= image_tag "featured/football/photo2", class: 'featured-img' %>
+        </div>
+
+        <div class="item">
+          <%= image_tag "featured/football/photo3", class: 'featured-img' %>
+        </div>
+
+        <div class="item">
+          <%= image_tag "featured/football/photo5", class: 'featured-img' %>
+        </div>
+
+        <div class="item">
+          <%= image_tag "featured/football/photo4", class: 'featured-img' %>
+        </div>
+      </div>
+    </div>
   </section>
+
   <section class="news-section">
     <h2>Football News</h2>
 

@@ -15,7 +15,9 @@ class AthleteDashboard < Administrate::BaseDashboard
     first_name: Field::String,
     last_name: Field::String,
     country_code: CountryField,
-    position: Field::String,
+    position: SelectField.with_options(
+      choices: ['', 'Center', 'Forward', 'Guard']
+    ),
     american_team_url: Field::String,
     overseas_team: Field::String,
     college: Field::String,
@@ -27,7 +29,12 @@ class AthleteDashboard < Administrate::BaseDashboard
     american_team_name: Field::String,
     photo: PhotoField,
     description: DescriptionField,
-    wnba_status: Field::String
+    wnba_status: SelectField.with_options(
+      choices: ['', 'WNBA', 'Professional Overseas']
+    ),
+    nfl_status: SelectField.with_options(
+      choices: ['', 'NFL', 'Free Agent']
+    )
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -50,6 +57,7 @@ class AthleteDashboard < Administrate::BaseDashboard
     :sport,
     :photo,
     :wnba_status,
+    :nfl_status,
     :country_code,
     :position,
     :american_team_name,
@@ -74,6 +82,7 @@ class AthleteDashboard < Administrate::BaseDashboard
     :last_name,
     :photo,
     :wnba_status,
+    :nfl_status,
     :country_code,
     :position,
     :american_team_name,
