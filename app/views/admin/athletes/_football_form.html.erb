@@ -46,6 +46,15 @@ and renders all form fields for a resource's editable attributes.
     </div>
   </div>
 
+  <div class="field-unit field-unit--string">
+    <div class="field-unit field-unit__label">
+      <%= f.label :nfl_status %>
+    </div>
+    <div class="field-unit field-unit__field">
+      <%= f.select(:nfl_status, ['NFL', 'Free Agent']) %>
+    </div>
+  </div>
+
   <div class="field-unit field-unit--photo-field">
     <div class="field-unit field-unit__label">
       <%= f.label :photo %>

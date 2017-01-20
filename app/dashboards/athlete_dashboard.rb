@@ -31,6 +31,9 @@ class AthleteDashboard < Administrate::BaseDashboard
     description: DescriptionField,
     wnba_status: SelectField.with_options(
       choices: ['WNBA', 'Professional Overseas']
+    ),
+    nfl_status: SelectField.with_options(
+      choices: ['NFL', 'Free Agent']
     )
   }.freeze
 
@@ -54,6 +57,7 @@ class AthleteDashboard < Administrate::BaseDashboard
     :sport,
     :photo,
     :wnba_status,
+    :nfl_status,
     :country_code,
     :position,
     :american_team_name,
@@ -78,6 +82,7 @@ class AthleteDashboard < Administrate::BaseDashboard
     :last_name,
     :photo,
     :wnba_status,
+    :nfl_status,
     :country_code,
     :position,
     :american_team_name,
