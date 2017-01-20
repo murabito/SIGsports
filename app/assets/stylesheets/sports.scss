@@ -180,19 +180,15 @@
   padding: 10px 30px;
 }
 
-.slider {
+.featured {
   position: relative;
-  overflow: hidden;
-  float: left;
   margin-right: 350px;
-  width: 100%;
-  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
-.slider-img {
-  min-width: 500px;
-  max-width: 100%;
-  min-height: 100%;
+.featured-img {
+  min-height: 100vh;
 }
 
 .news-section {
