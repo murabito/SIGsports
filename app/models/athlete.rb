@@ -8,4 +8,5 @@ class Athlete < ActiveRecord::Base
   scope :unavailable, -> { where(is_available: false) }
   scope :position, -> position { where(position: position) }
   scope :wnba_status, -> wnba_status { where(wnba_status: wnba_status) }
+  scope :nfl_status, -> nfl_status { where(nfl_status: nfl_status) }
 end

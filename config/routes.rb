@@ -31,6 +31,9 @@ Rails.application.routes.draw do
   get 'womens-basketball/wnba', to: 'sports#womens_basketball_wnba'
   get 'womens-basketball/overseas', to: 'sports#womens_basketball_overseas'
 
+  get 'football/nfl', to: 'sports#football_nfl'
+  get 'football/free-agent', to: 'sports#football_free_agent'
+
   ## Womens Basketball Pages ##
   get '/womens-basketball/about', to: 'pages/womens_basketball#about'
   get '/womens-basketball/team', to: 'pages/womens_basketball#team'

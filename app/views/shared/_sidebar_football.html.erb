@@ -23,7 +23,16 @@
       </ul>
     </li>
 
-    <li><a href="<%= football_path %>">Clients</a></li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Clients
+      </a>
+      <ul class="dropdown-menu">
+        <li><%= link_to 'NFL', football_nfl_path %></li>
+        <li><%= link_to 'Free Agent', football_free_agent_path %></li>
+      </ul>
+    </li>
+
     <li><a href="#">Contact Us</a></li>
   </ul>
 </nav>

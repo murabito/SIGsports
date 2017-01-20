@@ -34,8 +34,13 @@ class SportsController < ApplicationController
     @athletes = apply_scopes(Athlete).where(sport_id: 4)
   end
 
-  def football
+  def football_nfl
     @sport = Sport.find_by_type_id(2)
-    @athletes = apply_scopes(Athlete).where(sport_id: 2)
+    @athletes = apply_scopes(Athlete).where(sport_id: 2).where(nfl_status: 'NFL')
+  end
+
+  def football_free_agent
+    @sport = Sport.find_by_type_id(2)
+    @athletes = apply_scopes(Athlete).where(sport_id: 2).where(nfl_status: 'Free Agent')
   end
 end
