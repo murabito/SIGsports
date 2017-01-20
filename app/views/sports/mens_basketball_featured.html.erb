@@ -1,12 +1,28 @@
 <main>
-  <section class="slider">
-    <%= image_tag 'featured/mens_basketball/alex_len', class: 'slider-img' %>
-    <%= image_tag 'featured/mens_basketball/anosike', class: 'slider-img' %>
-    <%= image_tag 'featured/mens_basketball/brandt', class: 'slider-img' %>
-    <%= image_tag 'featured/mens_basketball/tarik_lakers', class: 'slider-img' %>
+  <section id="featured">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <%= image_tag "featured/mens_basketball/photo1", class: 'featured-img' %>
+        </div>
+
+        <div class="item">
+          <%= image_tag "featured/mens_basketball/photo2", class: 'featured-img' %>
+        </div>
+
+        <div class="item">
+          <%= image_tag "featured/mens_basketball/photo3", class: 'featured-img' %>
+        </div>
+
+        <div class="item">
+          <%= image_tag "featured/mens_basketball/photo4", class: 'featured-img' %>
+        </div>
+      </div>
+    </div>
   </section>
+
   <section class="news-section">
-    <h2>Men's Basketball News</h2>
+    <h2>Mens Basketball News</h2>
 
     <% @news_articles.each do | article | %>
       <a href="<%= article.url %>">
