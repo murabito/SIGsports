@@ -10,38 +10,61 @@
       </figure>
       
       <ul class="athlete-info">
-        <li>
-          <div class="flag-container">
-            <%= image_tag flag_url(@athlete), class: 'flag-icon', alt: 'US' %>
-          </div>
-        </li>
-        <li>
-          <span>Position:</span>
-          <span><%= @athlete.position %></span>
-        </li>
-        <li>
-          <span>Team:</span>
-          <span><%= link_to @athlete.american_team_name, @athlete.american_team_url, class: 'red' %></span>
-        </li>
-        <li>
-          <span>Born:</span>
-          <span><%= @athlete.birthdate.strftime("%m/%d/%Y") if @athlete.birthdate %></span>
-        </li>
-        <li>
-          <span>Height:</span>
-          <span><%= @athlete.height %></span>
-        </li>
-        <li>
-          <span>Weight:</span>
-          <span><%= @athlete.weight %></span>
-        </li>
-        <li>
-          <span>College:</span>
-          <span><%= @athlete.college %></span>
-        </li>
-        <li>
-          <span><%= link_to 'Website', @athlete.website_url, class: 'red' %></span>
-        </li>
+        <% if @athlete.country_code %>
+          <li>
+            <div class="flag-container">
+              <%= image_tag flag_url(@athlete), class: 'flag-icon', alt: 'US' %>
+            </div>
+          </li>
+        <% end %>
+
+        <% if @athlete.position %>
+          <li>
+            <span>Position:</span>
+            <span><%= @athlete.position %></span>
+          </li>
+        <% end %>
+
+        <% unless @athlete.american_team_name.empty? %>
+          <li>
+            <span>Team:</span>
+            <span><%= link_to @athlete.american_team_name, @athlete.american_team_url, class: 'red' %></span>
+          </li>
+        <% end %>
+
+        <% if @athlete.birthdate %>
+          <li>
+            <span>Born:</span>
+            <span><%= @athlete.birthdate.strftime("%m/%d/%Y") %></span>
+          </li>
+        <% end %>
+
+        <% unless @athlete.height.empty? %>
+          <li>
+            <span>Height:</span>
+            <span><%= @athlete.height %></span>
+          </li>
+        <% end %>
+
+        <% unless @athlete.weight.empty? %>
+          <li>
+            <span>Weight:</span>
+            <span><%= @athlete.weight %></span>
+          </li>
+        <% end %>
+
+        <% unless @athlete.college.empty? %>
+          <li>
+            <span>College:</span>
+            <span><%= @athlete.college %></span>
+          </li>
+        <% end %>
+
+        <% unless @athlete.website_url.empty? %>
+          <li>
+            <span><%= link_to 'Website', @athlete.website_url, class: 'red' %></span>
+          </li>
+        <% end %>
       </ul>
     </section>
     <section class="athlete-description-box">
@@ -58,11 +81,3 @@
     <% end %>
   </div>
 </main>
-
-
-
-
-
-
-
-
