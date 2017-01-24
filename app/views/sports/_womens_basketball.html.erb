@@ -1,20 +1,14 @@
   <div class="column">
     <h2 class="column-header">Guards</h2>
-    <% 9.times do |_| %>
-      <%= render partial: 'woman_athlete', collection: @athletes.where(position: "Guard") %>
-    <% end %>
+    <%= render partial: 'woman_athlete', collection: @athletes.where(position: "Guard") %>
   </div>
 
   <div class="column">
     <h2 class="column-header">Forwards</h2>
-    <% 9.times do |_| %>
-      <%= render partial: 'woman_athlete', collection: @athletes.where(position: "Forward") %>
-    <% end %>
+    <%= render partial: 'woman_athlete', collection: @athletes.where(position: "Forward") %>
   </div>
 
   <div class="column">
     <h2 class="column-header">Centers</h2>
-    <% 9.times do |_| %>
-      <%= render partial: 'woman_athlete', collection: @athletes.where(position: "Center") %>
-    <% end %>
+    <%= render partial: 'woman_athlete', collection: @athletes.where(position: "Center") %>
   </div>
