@@ -265,6 +265,13 @@
   .grid-item { 
     width: 50%;
   }
+  .column {
+    width: 100%;
+    float: left;
+  }
+  .athlete-list-item {
+    text-align: center;
+  }
 }
 
 @media (max-width: 1250px) {
