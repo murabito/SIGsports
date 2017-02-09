@@ -199,6 +199,13 @@
   #homepage li span {
     font-size: 2.25em;
   }
+
+  #about h1, .what-we-do h1, .sports h1 {
+    display: inline-block;
+    margin: 0 auto 0 0;
+    font-size: 1.75em;
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -208,13 +215,6 @@
 
   #homepage li span {
     font-size: 3.5em;
-  }
-
-  #about h1, .what-we-do h1, .sports h1 {
-    display: inline-block;
-    margin: 0 auto 0 0;
-    font-size: 2em;
-    width: 100%;
   }
 }
 
