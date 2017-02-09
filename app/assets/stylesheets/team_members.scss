@@ -198,6 +198,32 @@
   }
 }
 
+@media (max-width: 1150px) {
+  #team {
+    height: auto;
+  }
+
+  #team li, #team.football li {
+    padding: 0;
+  }
+
+  #team.mens-basketball li, #team.womens-basketball li, #team.football li {
+    width: 47%;
+    margin: 20px 1.5%;
+  }
+
+  #team ul {
+    padding: 0;
+  }
+
+  #team ul footer {
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+  }
+
+}
+
 @media (max-width: 480px) {
   .team-member .image-container {
     width: 100%;
