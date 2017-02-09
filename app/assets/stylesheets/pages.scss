@@ -189,7 +189,27 @@
   max-width: 100%;
 }
 
+@media (max-width: 1125px) {
+  #homepage li span {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 1000px) {
+  #homepage li span {
+    font-size: 2.25em;
+  }
+}
+
 @media (max-width: 768px) {
+  #homepage li {
+    width: 100%;
+  }
+
+  #homepage li span {
+    font-size: 3.5em;
+  }
+
   #about h1, .what-we-do h1, .sports h1 {
     display: inline-block;
     margin: 0 auto 0 0;
