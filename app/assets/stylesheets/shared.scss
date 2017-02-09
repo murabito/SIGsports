@@ -149,11 +149,18 @@ nav li {
 
 #responsive-burger {
   display: none;
+  padding: 10px;
+  float: left;
   font-size: 3em;
+}
+
+#responsive-burger::after {
+  display: block;
 }
 
 #responsive-burger a {
   color: #d0cfd1;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -167,7 +174,6 @@ nav li {
 
   #responsive-burger {
     display: inline;
-    float: left;
   }
 
 }
