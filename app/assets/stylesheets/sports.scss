@@ -285,25 +285,21 @@
 }
 
 @media (max-width: 768px) {
-  
+  #featured {
+    top: 60px;
+    left: 0;
+
+  }
+
+  .news-section {
+    margin-top: 60px;
+    position: absolute;
+    top: 100vh;
+    height: 800px;
+    float: left;
+    width: 100%;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
