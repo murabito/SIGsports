@@ -189,10 +189,14 @@
   max-width: 100%;
 }
 
-
-
-
-
+@media (max-width: 768px) {
+  #about h1, .what-we-do h1, .sports h1 {
+    display: inline-block;
+    margin: 0 auto 0 0;
+    font-size: 2em;
+    width: 100%;
+  }
+}
 
 
 

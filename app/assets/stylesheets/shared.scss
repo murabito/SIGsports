@@ -149,13 +149,15 @@ nav li {
 
 #responsive-burger {
   display: none;
-  padding: 10px;
+  padding: 0 20px;
   float: left;
   font-size: 3em;
 }
 
 #responsive-burger::after {
   display: block;
+  clear: both;
+  content: '';
 }
 
 #responsive-burger a {
@@ -168,12 +170,17 @@ nav li {
     display: none;
   }
 
+  header {
+    height: 65px;
+    padding: 5px 0 0 0;
+  }
+
   main {
     margin-left: 0;
   }
 
   #responsive-burger {
-    display: inline;
+    display: inline-block;
   }
 
 }

@@ -83,15 +83,57 @@
 #video-section iframe {
   display: block;
   min-width: 840px;
+  width: 100%;
   min-height: 472.5px;
   padding: 40px;
   margin: 0 auto;
   border: none;
 }
 
+@media (max-width: 1125px) {
+  .athlete-info-container {
+    width: 300px;
+    margin-right: 30px;
+  }
 
+  #video-section iframe {
+    min-width: 600px;
+  }
+}
 
+@media (max-width: 955px) {
+  .athlete-info-container {
+    float: none;
+    width: 100%;
+  }
 
+  #athlete figure {
+    display: inline-block;
+    width: 47.5%;
+    margin-right: 4%;
+  }
+
+  #athlete img {
+    width: 100%;
+  }
+
+  .athlete-info {
+    display: inline-block;
+    width: 47.5%;
+    vertical-align: top;
+  }
+
+  #video-section iframe {
+    min-width: 500px;
+  }
+}
+
+@media (max-width: 850px) {
+  .athlete-info-container {
+
+  }
+
+}
 
 
 

@@ -299,7 +299,19 @@
     float: left;
     width: 100%;
   }
+
+  .filter-header {
+    padding: 0;
+  }
+
+  .filter-header .right-filter {
+    width: 100%;
+  }
+
+  .right-filter li {
+    display: inline-block;
+    width: 48%;
+    padding: 0 0 10px 0;
+    text-align: center;
+  }
 }
-
-
-
