@@ -146,3 +146,50 @@ nav li {
 #sidebar footer .footer-links a:hover {
   color: #c1272d;
 }
+
+#responsive-burger {
+  display: none;
+  padding: 0 20px;
+  float: left;
+  font-size: 3em;
+}
+
+#responsive-burger::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+#responsive-burger a {
+  color: #d0cfd1;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    display: none;
+  }
+
+  header {
+    height: 65px;
+    padding: 5px 0 0 0;
+  }
+
+  main {
+    margin-left: 0;
+  }
+
+  #responsive-burger {
+    display: inline-block;
+  }
+
+}
+
+
+
+
+
+
+
+
+

@@ -265,6 +265,13 @@
   .grid-item { 
     width: 50%;
   }
+  .column {
+    width: 100%;
+    float: left;
+  }
+  .athlete-list-item {
+    text-align: center;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -274,5 +281,37 @@
 
 @media (max-width: 935px) {
   main li { 
+  }
+}
+
+@media (max-width: 768px) {
+  #featured {
+    top: 60px;
+    left: 0;
+
+  }
+
+  .news-section {
+    margin-top: 60px;
+    position: absolute;
+    top: 100vh;
+    height: 800px;
+    float: left;
+    width: 100%;
+  }
+
+  .filter-header {
+    padding: 0;
+  }
+
+  .filter-header .right-filter {
+    width: 100%;
+  }
+
+  .right-filter li {
+    display: inline-block;
+    width: 48%;
+    padding: 0 0 10px 0;
+    text-align: center;
   }
 }
