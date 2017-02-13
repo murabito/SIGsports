@@ -128,7 +128,7 @@
 
 .sports h1, .sports #slogan {
   font-size: 2.75em;
-  padding: 0 20px;
+  padding: 20px 20px 0 20px;
 }
 
 .what-we-do h2 {
@@ -200,11 +200,33 @@
     font-size: 2.25em;
   }
 
+  #about {
+    padding: 10% 8%;
+    font-size: 1.5em;
+  }
+
+  #about p, .what-we-do p, .what-we-do ul, .what-we-do dl {
+    line-height: 1.5;
+  }
+
   #about h1, .what-we-do h1, .sports h1 {
     display: inline-block;
     margin: 0 auto 0 0;
     font-size: 1.75em;
     width: 100%;
+  }
+
+  .what-we-do {
+    padding: 3% 5%;
+    font-size: 1.25em;
+  }
+
+  .what-we-do h2 {
+    font-size: 1.1em;
+  }
+
+  .what-we-do h4 {
+    font-size: 1.1em;
   }
 }
 
@@ -217,7 +239,6 @@
     font-size: 3.5em;
   }
 }
-
 
 
 

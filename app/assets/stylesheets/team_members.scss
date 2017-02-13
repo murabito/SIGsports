@@ -209,11 +209,11 @@
 
   #team.mens-basketball li, #team.womens-basketball li, #team.football li {
     width: 47%;
-    margin: 20px 1.5%;
+    margin: 10px 1.5%;
   }
 
   #team ul {
-    padding: 0;
+    padding: 20px;
   }
 
   #team ul footer {
@@ -221,15 +221,59 @@
     margin: 0 auto;
     left: 0;
   }
-
 }
 
 @media (max-width: 480px) {
-  .team-member .image-container {
-    width: 100%;
-    padding: 50px;
-    margin-right: 50px;
+
+  #team ul {
+    padding: 0;
+  }
+
+  #team.mens-basketball li, #team.womens-basketball li, #team.football li {
+    width: 90%;
+    margin: 20px 5%;
     display: block;
     float: none;
   }
+
+  #team .team-social-media-icons .one-icon {
+    margin-left: -15px;
+  }
+
+  #team .team-social-media-icons .first-of-two-icons,
+  #team .team-social-media-icons .second-of-two-icons {
+    margin-left: -37.5px;
+  }
+
+  #team .team-social-media-icons .first-of-three-icons,
+  #team .team-social-media-icons .second-of-three-icons,
+  #team .team-social-media-icons .third-of-three-icons {
+    margin-left: -30px;
+  }
+
+  .team-member .description {
+    padding: 20px 30px;
+  }
+
+  .team-member h1 {
+    font-size: 1.75em;
+  }
+
+  .team-member h2 {
+    font-size: 1.5em;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

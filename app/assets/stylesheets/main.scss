@@ -1,96 +1,252 @@
-body {
-  font: normal 14px "avenir-medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #0d0d0b;
-  color: #d0cfd1;
-}
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
 
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  color: #c1272d;
-  text-decoration: none;
-}
-
-.red {
-  color: #c1272d;
-}
-
-.black {
-  color: #0d0d0b;
-}
-
-.white {
-  color: #fff;
-}
-
-.light-grey {
-  color: #d0cfd1;
-}
-
-.medium {
-  font-weight: 500;
-}
-
-.bold {
-  font-family: "avenir-black";
-}
-
-.font-size-15 {
-  font-size: 1.5em;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-main {
-  overflow: hidden;
-  margin: 0 0 0 300px;
-  min-height: 100vh;
-}
-
-hr {
-  border-color: #d0cfd1;
-  margin: 20px;
-}
-
-.box {
-  width: 100%;
-  border: solid 1px #d0cfd1;
-  box-shadow: 0 0 3px 0 rgba(208, 207, 209, .3);
-  border-radius: 3px;
-  box-sizing: border-box;
-}
-
-#slogan {
-  padding: 20px 0;
-  font-family: "avenir-heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2em;
-  color: #c1272d;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.flag-container {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  vertical-align: -10px;
-}
-
-.flag-container img {
-  display: block;
-  border-radius: 100%;
-  min-width: 100%;
+#homepage {
+  padding: 0;
+  margin: 0;
   min-height: 100%;
-  max-width: 100%;
   max-height: 100%;
 }
 
-@media (max-width: 1000px) {
-  #slogan {
-    font-size: 1.5em;
+#homepage ul {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#homepage li {
+  overflow: hidden;
+  display: block;
+  float: left;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 33.33%;
+  border-right: #f6f7f8 solid 4px;
+  list-style: none;
+}
+
+#homepage li:last-of-type {
+  border:none;
+}
+
+#homepage li a {
+  text-decoration: none;
+  float: left;
+  display: table;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+#homepage .photo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+#homepage li a:hover {
+  transform: scale(1.1, 1.1);
+  transition: all .5s ease;
+}
+
+#homepage li span {
+  display: table-cell;
+  font-size: 3.5em;
+  vertical-align: middle;
+  padding-left: 10px;
+  z-index: 3;
+  letter-spacing: 4px;
+  font-family: "avenir-black";
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.1;
+  text-shadow: 0 0 10px #1a1e24;
+}
+
+#women {
+  background-image: image-url("img_ars.jpg");
+}
+
+#men {
+  background-image: image-url("img_alex.jpg");
+}
+
+#football {
+  background-image: image-url("img_football.jpg");
+}
+
+#homepage .logo {
+  position: fixed;
+  display: inline;
+  bottom: 20px;
+  left: 50%;
+  width: 225px;
+  height: auto;
+  margin-left: -112.5px;
+  text-align: center;
+  z-index: 4;
+}
+
+#about, .what-we-do {
+  min-height: 100vh;
+  padding: 17.5%;
+  text-align: justify;
+  box-sizing: border-box;
+  letter-spacing: 1.25px;
+}
+
+#about {
+  font-size: 1.75em;  
+}
+
+.what-we-do {
+  padding: 5% 10%;
+  font-size: 1.5em;  
+}
+
+#about h1, .what-we-do h1, .sports h1 {
+  padding: 20px 0;
+  font-family: "avenir-black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #c1272d;
+}
+
+.sports h1, .sports #slogan {
+  font-size: 2.75em;
+  padding: 20px 20px 0 20px;
+}
+
+.what-we-do h2 {
+  padding: 20px 0 0 0;
+  font-family: "avenir-heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.25em;
+  color: #c1272d;
+}
+
+.what-we-do h4 {
+  padding: 20px 0 0 0;
+  font-family: "avenir-medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+#about p, .what-we-do p, .what-we-do ul, .what-we-do dl {
+  font-family: "avenir-book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px 0;
+  line-height: 1.75;
+}
+
+.what-we-do ul {
+  padding-left: 20px;
+  list-style-type: circle;
+}
+
+.what-we-do li {
+  padding: 0 0 5px 0;
+}
+
+.what-we-do li:last-of-type {
+  padding: 0;
+}
+
+.what-we-do dt {
+  padding: 0 0 5px 0;
+  color: #c1272d;  
+}
+
+.what-we-do dd {
+  padding: 0 0 20px 0;
+}
+
+.team-member-container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.team-member-container li {
+  float: left;
+  width: 25%;
+}
+
+.team-member-container li img {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 1125px) {
+  #homepage li span {
+    font-size: 3em;
   }
 }
+
+@media (max-width: 1000px) {
+  #homepage li span {
+    font-size: 2.25em;
+  }
+
+  #about {
+    padding: 10% 8%;
+    font-size: 1.5em;
+  }
+
+  #about p, .what-we-do p, .what-we-do ul, .what-we-do dl {
+    line-height: 1.5;
+  }
+
+  #about h1, .what-we-do h1, .sports h1 {
+    display: inline-block;
+    margin: 0 auto 0 0;
+    font-size: 1.75em;
+    width: 100%;
+  }
+
+  .what-we-do {
+    padding: 3% 5%;
+    font-size: 1.25em;
+  }
+
+  .what-we-do h2 {
+    font-size: 1.1em;
+  }
+
+  .what-we-do h4 {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 768px) {
+  #homepage li {
+    width: 100%;
+  }
+
+  #homepage li span {
+    font-size: 3.5em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

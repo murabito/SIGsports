@@ -96,20 +96,28 @@
     margin-right: 30px;
   }
 
+  #athlete h1 {
+    font-size: 2.5em;
+  }
+
   #video-section iframe {
     min-width: 600px;
   }
 }
 
-@media (max-width: 955px) {
+@media (max-width: 900px) {
   .athlete-info-container {
     float: none;
     width: 100%;
   }
 
+  .athlete-info {
+    font-size: 1.25em;
+  }
+
   #athlete figure {
     display: inline-block;
-    width: 47.5%;
+    width: 55%;
     margin-right: 4%;
   }
 
@@ -119,7 +127,7 @@
 
   .athlete-info {
     display: inline-block;
-    width: 47.5%;
+    width: 40%;
     vertical-align: top;
   }
 
@@ -128,13 +136,14 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 768px) {
   .athlete-info-container {
-
+    .athlete-info {
+      font-size: 1.5em;
+    }
   }
 
 }
-
 
 
 
