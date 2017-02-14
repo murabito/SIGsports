@@ -101,7 +101,10 @@
   }
 
   #video-section iframe {
-    min-width: 600px;
+    padding: 2%;
+    min-width: 560px;
+    width: 100%;
+    min-height: 315px;
   }
 }
 
@@ -129,10 +132,6 @@
     display: inline-block;
     width: 40%;
     vertical-align: top;
-  }
-
-  #video-section iframe {
-    min-width: 500px;
   }
 }
 
@@ -176,6 +175,12 @@
 
   .athlete-description-box {
     font-size: 1em;
+  }
+
+  #video-section iframe {
+    min-width: 240px;
+    width: 100%;
+    min-height: 135px;
   }
 }
 
