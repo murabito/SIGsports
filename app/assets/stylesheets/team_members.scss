@@ -221,6 +221,40 @@
     margin: 0 auto;
     left: 0;
   }
+
+  #team .team-social-media-icons .one-icon {
+    margin-left: -15px;
+  }
+
+  #team .team-social-media-icons .first-of-two-icons {
+    margin-left: -37.5px;
+  }
+
+  #team .team-social-media-icons .second-of-two-icons {
+    margin-right: -37.5px;
+  }
+
+  #team .team-social-media-icons .first-of-three-icons {
+    margin-left: -30px;
+  }
+
+  #team .team-social-media-icons .second-of-three-icons {
+    margin-left: -15px;
+  }
+
+  #team .team-social-media-icons .third-of-three-icons {
+    margin-right: -45px;
+  }
+
+  .team-member .description {
+    padding: 20px 5%;
+    text-align: justify;
+  }
+
+  .team-member .image-container {
+    padding: 20px 5%;
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -236,23 +270,10 @@
     float: none;
   }
 
-  #team .team-social-media-icons .one-icon {
-    margin-left: -15px;
-  }
-
-  #team .team-social-media-icons .first-of-two-icons,
-  #team .team-social-media-icons .second-of-two-icons {
-    margin-left: -37.5px;
-  }
-
-  #team .team-social-media-icons .first-of-three-icons,
-  #team .team-social-media-icons .second-of-three-icons,
-  #team .team-social-media-icons .third-of-three-icons {
-    margin-left: -30px;
-  }
-
-  .team-member .description {
-    padding: 20px 30px;
+  .team-member .image-container {
+    float: none;
+    width: 100%;
+    padding: 40px 5%;
   }
 
   .team-member h1 {
