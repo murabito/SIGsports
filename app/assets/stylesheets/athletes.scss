@@ -137,12 +137,46 @@
 }
 
 @media (max-width: 768px) {
-  .athlete-info-container {
-    .athlete-info {
-      font-size: 1.5em;
-    }
+  .athlete-info-container .athlete-info {
+    font-size: 1.5em;
   }
 
+  .athlete-description-box {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 480px) {
+  #athlete .box {
+    padding: 0;
+  }
+
+  #athlete h1 {
+    padding: 20px 5% 10px 5%;
+    font-size: 2em;
+  }
+
+  #athlete figure {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .athlete-info-container {
+    margin-bottom: 0;
+  }
+
+  .athlete-info-container .athlete-info {
+    width: 100%;
+    font-size: 1.25em;
+  }
+
+  .athlete-info-container, .athlete-description-box {
+    padding: 10px 5%;
+  }
+
+  .athlete-description-box {
+    font-size: 1em;
+  }
 }
 
 
