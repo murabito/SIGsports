@@ -1,6 +1,12 @@
 <div class="field-unit__label">
   <%= f.label field.attribute %>
 </div>
-<div class="field-unit__field">
+
+<% if !!field %>
+  <%= image_tag field.medium %>
   <%= f.file_field :photo %>
-</div>
+<% else %>
+  <div class="field-unit__field">
+    <%= f.file_field :photo %>
+  </div>
+<% end %>
