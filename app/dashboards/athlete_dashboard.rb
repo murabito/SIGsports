@@ -34,7 +34,8 @@ class AthleteDashboard < Administrate::BaseDashboard
     ),
     nfl_status: SelectField.with_options(
       choices: ['', 'NFL', 'Free Agent']
-    )
+    ),
+    is_available: Field::Boolean
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -70,6 +71,7 @@ class AthleteDashboard < Administrate::BaseDashboard
     :website_url,
     :video_embed_code,
     :description,
+    :is_available,
     :created_at,
     :updated_at
   ].freeze
@@ -95,7 +97,8 @@ class AthleteDashboard < Administrate::BaseDashboard
     :weight,
     :website_url,
     :video_embed_code,
-    :description
+    :description,
+    :is_available
   ].freeze
 
   # Overwrite this method to customize how athletes are displayed
