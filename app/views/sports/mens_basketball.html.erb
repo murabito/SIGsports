@@ -1,10 +1,8 @@
 <main class="sports grid">
 
-<% if false %>
 <h1>Coming Soon</h1>
-<% end %>
 
-
+<% if false %>
   <header class="filter-header">
     <ul class="left-filter">
       <li><%= link_to 'Centers', mens_basketball_path(position: 'Center'), class: "filter-link" %></li>
@@ -14,4 +12,6 @@
   </header>
   
   <%= render partial: 'athlete', collection: @athletes %>
+<% end %>
+
 </main>
