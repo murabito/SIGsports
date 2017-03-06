@@ -12,6 +12,15 @@
   z-index: 5;
 }
 
+#sidebar.small {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 100vh;
+  right: 100vw;
+  width: 100%;
+}
+
 #sidebar header h1 a {
   overflow: hidden;
   display: block;
@@ -170,6 +179,8 @@ nav li {
   #sidebar {
     display: none;
   }
+
+  
 
   header {
     height: 65px;
