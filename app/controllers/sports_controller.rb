@@ -22,11 +22,23 @@ class SportsController < ApplicationController
   def womens_basketball_wnba
     @sport = Sport.find_by_type_id(0)
     @athletes = apply_scopes(Athlete).where(sport_id: 3).where(wnba_status: 'WNBA')
+    @guards = @athletes.where(position: 'Guard').to_a
+    @guards.sort! {|a,b| a.last_name.downcase <=> b.last_name.downcase }
+    @forwards = @athletes.where(position: 'Forward').to_a
+    @forwards.sort! {|a,b| a.last_name.downcase <=> b.last_name.downcase }
+    @centers = @athletes.where(position: 'Center').to_a
+    @centers.sort! {|a,b| a.last_name.downcase <=> b.last_name.downcase }
   end
 
   def womens_basketball_overseas
     @sport = Sport.find_by_type_id(0)
     @athletes = apply_scopes(Athlete).where(sport_id: 3).where(wnba_status: 'Professional Overseas')
+    @guards = @athletes.where(position: 'Guard').to_a
+    @guards.sort! {|a,b| a.last_name.downcase <=> b.last_name.downcase }
+    @forwards = @athletes.where(position: 'Forward').to_a
+    @forwards.sort! {|a,b| a.last_name.downcase <=> b.last_name.downcase }
+    @centers = @athletes.where(position: 'Center').to_a
+    @centers.sort! {|a,b| a.last_name.downcase <=> b.last_name.downcase }
   end
   
   def mens_basketball
