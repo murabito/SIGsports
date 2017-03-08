@@ -1,12 +1,11 @@
 $ ->
 
   $(document).on 'ready page:load', ->
-
-    $("#responsive-burger a").on 'click', (e) ->
+  
+    $("#responsive-burger a").on 'click', ->
       $('#sidebar').addClass('small');
       $('#sidebar').show()
 
-    $("#sidebar a").on 'click', (e) ->
-      if $(this).hasClass('about-us')
-        window.location.href = "http://sigsports.com/womens-basketball/about"
-  
+    $("#sidebar a").on 'click', ->
+      if $(this).hasClass 'womens-about'
+        window.location.href = "http://sigsports.com/womens-basketball/about"  
