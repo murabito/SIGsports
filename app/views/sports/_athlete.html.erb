@@ -9,10 +9,12 @@
         <span>Position:</span>
         <span><%= athlete.position %></span>
       </li>
-      <li>
-        <span>Team:</span>
-        <span><%= link_to athlete.american_team_name, athlete.american_team_url, class: 'red' %></span>
-      </li>
+      <% unless athlete.american_team_name.empty? %>
+        <li>
+          <span>Team:</span>
+          <span><%= link_to athlete.american_team_name, athlete.american_team_url, class: 'red' %></span>
+        </li>
+      <% end %>
       <li>
         <span>Born:</span>
         <span><%= athlete.birthdate.strftime("%m/%d/%Y") if athlete.birthdate %></span>
