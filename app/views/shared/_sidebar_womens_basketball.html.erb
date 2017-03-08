@@ -5,9 +5,9 @@
         Who We Are
       </a>
       <ul class="dropdown-menu">
-        <li><a href="<%= womens_basketball_about_path %>">About Us</a></li>
-        <li><a href="<%= womens_basketball_team_path %>">Meet Our Team</a></li>
-        <li><a href="<%= womens_basketball_testimonials_path %>">Testimonials</a></li>
+        <li><a class="womens-about" href="<%= womens_basketball_about_path %>">About Us</a></li>
+        <li><a class="womens-team" href="<%= womens_basketball_team_path %>">Meet Our Team</a></li>
+        <li><a class="womens-testimonials" href="<%= womens_basketball_testimonials_path %>">Testimonials</a></li>
       </ul>
     </li>
 
@@ -16,10 +16,10 @@
         What We Do
       </a>
       <ul class="dropdown-menu">
-        <li><a href="<%= womens_basketball_professional_management_path %>">Professional Management</a></li>
-        <li><a href="<%= womens_basketball_career_path %>">Career Development</a></li>
-        <li><a href="<%= womens_basketball_personal_management_path %>">Personal Management</a></li>
-        <li><a href="<%= womens_basketball_marketing_path %>">Marketing &amp; Philanthropy</a></li>
+        <li><a class="womens-professional-management" href="<%= womens_basketball_professional_management_path %>">Professional Management</a></li>
+        <li><a class="womens-career" href="<%= womens_basketball_career_path %>">Career Development</a></li>
+        <li><a class="womens-personal-management" href="<%= womens_basketball_personal_management_path %>">Personal Management</a></li>
+        <li><a class="womens-marketing" href="<%= womens_basketball_marketing_path %>">Marketing &amp; Philanthropy</a></li>
       </ul>
     </li>
 
@@ -28,8 +28,8 @@
         Clients
       </a>
       <ul class="dropdown-menu">
-        <li><%= link_to 'WNBA', womens_basketball_wnba_path %></li>
-        <li><%= link_to 'Professional Overseas', womens_basketball_overseas_path %></li>
+        <li><%= link_to 'WNBA', womens_basketball_wnba_path, class: 'wnba' %></li>
+        <li><%= link_to 'Professional Overseas', womens_basketball_overseas_path, class: 'overseas' %></li>
       </ul>
     </li>
 
