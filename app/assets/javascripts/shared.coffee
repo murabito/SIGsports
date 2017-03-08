@@ -1,5 +1,7 @@
 $ ->
 
-  $("#responsive-burger").on 'click', (e) ->
+  $("#responsive-burger a").on 'click', (e) ->
     $('#sidebar').addClass('small');
     $('#sidebar').show()
+
+  
