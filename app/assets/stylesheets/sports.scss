@@ -97,12 +97,13 @@
   overflow: hidden;
   position: relative;
   float: left;
-  height: 50%;
+  height: 500px;
   width: 33.3333%;
   box-sizing: border-box;
 }
 
 .grid-item-image {
+  overflow: hidden;
   min-width: 400px;
   max-width: 100%;
   min-height: 100%;
