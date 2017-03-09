@@ -129,7 +129,8 @@
 } 
 
 .grid-item:hover > .grid-item-view,
-.grid-item:focus > .grid-item-view {
+.grid-item:focus > .grid-item-view,
+.grid-item:active > .grid-item-view {
   opacity: 1;
 } 
 
