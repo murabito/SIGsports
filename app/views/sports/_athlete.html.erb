@@ -34,13 +34,15 @@
         <span>College:</span>
         <span><%= athlete.college %></span>
       </li>
+      <% if @sport.id == 4 %>
       <li>
         <div class="flag-container">
           <%= image_tag flag_url(athlete), class: 'flag-icon', alt: 'US' %>
         </div>
       </li>
+      <% end %>
       <li>
-        <% unless @sport.id == 2 %>
+        <% unless @sport.id == 4 %>
           <a href="<%= athlete_path(athlete.id) %>" class="grid-item-view-button">FULL BIOGRAPHY</a>
         <% end %>
       </li>
