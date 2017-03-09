@@ -256,12 +256,14 @@
 @media (max-width: 1535px) {
   .grid-item { 
     width: 33.33333333%;
+    height: 400px;
   }
 }
 
 @media (max-width: 1135px) {
   .grid-item { 
     width: 50%;
+    height: 450px;
   }
   .column {
     width: 100%;
@@ -269,11 +271,6 @@
   }
   .athlete-list-item {
     text-align: center;
-  }
-}
-
-@media (max-width: 1250px) {
-  main #team li {
   }
 }
 
@@ -304,12 +301,15 @@
   }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .slogan-footer {
     margin-left: 0;
   }
 }
 
 @media (max-width: 480px) {
-  
+  .grid-item {
+    float: none;
+    width: 100%;
+  }
 }
