@@ -42,7 +42,7 @@
       </li>
       <% end %>
       <li>
-        <% unless @sport.id == 4 %>
+        <% if @sport.id == 4 %>
           <a href="<%= athlete_path(athlete.id) %>" class="grid-item-view-button">FULL BIOGRAPHY</a>
         <% end %>
       </li>
