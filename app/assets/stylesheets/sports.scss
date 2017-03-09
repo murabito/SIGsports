@@ -128,7 +128,8 @@
   box-sizing: border-box;
 } 
 
-.grid-item:hover > .grid-item-view {
+.grid-item:hover > .grid-item-view,
+, .grid-item:hover:focus > .grid-item-view {
   opacity: 1;
 } 
 
@@ -256,14 +257,13 @@
 @media (max-width: 1535px) {
   .grid-item { 
     width: 33.33333333%;
-    height: 400px;
+    height: 450px;
   }
 }
 
 @media (max-width: 1135px) {
   .grid-item { 
     width: 50%;
-    height: 450px;
   }
   .column {
     width: 100%;
